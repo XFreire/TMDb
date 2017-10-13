@@ -29,7 +29,7 @@ final public class WebService {
     private let baseURL = URL(string: "https://api.themoviedb.org/3")!
     private let decoder = JSONDecoder()
     
-    init(configuration: WebServiceConfiguration) {
+    init(configuration: WebServiceConfiguration = .default) {
         self.configuration = configuration
     }
     

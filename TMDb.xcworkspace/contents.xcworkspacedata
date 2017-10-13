@@ -5,7 +5,7 @@
       location = "container:"
       name = "Playgrounds">
       <FileRef
-         location = "group:Playgrounds/MyPlayground.playground">
+         location = "group:/Users/alexandre/Development/TMDb/Playgrounds/WebService.playground">
       </FileRef>
    </Group>
    <FileRef

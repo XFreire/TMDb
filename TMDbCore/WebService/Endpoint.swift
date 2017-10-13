@@ -12,33 +12,43 @@ public enum HTTPMethod: String {
     case get = "GET"
 }
 
-public protocol Endpoint {
-    var method: HTTPMethod { get }
-    var path: String { get }
-    var parameters: [String : String] { get }
+public enum Endpoint {
+    case configuration
 }
-
-extension Endpoint {
-    var method: HTTPMethod {
-        return .get
-    }
-    
-    var parameters: [String : String] {
-        return [:]
-    }
-    
-    func request(with baseURL: URL, adding parametes: [String : String]) -> URLRequest {
+internal extension Endpoint {
+    func request(with baseURL: URL, adding parameters: [String : String]) -> URLRequest {
         let url = baseURL.appendingPathComponent(path)
         
         var newParameters = self.parameters
         parameters.forEach{ newParameters.updateValue($1, forKey: $0) }
         
         var components = URLComponents(url: url, resolvingAgainstBaseURL: false)!
-        components.queryItems = parameters.isEmpty ? nil : parameters.map(URLQueryItem.init)
+        components.queryItems = newParameters.map(URLQueryItem.init)
         
         var request = URLRequest(url: components.url!)
         request.httpMethod = method.rawValue
         
         return request
+        
     }
+}
+
+private extension Endpoint {
+    var method: HTTPMethod {
+        return .get
+    }
+    
+    var path: String {
+        switch self {
+        case .configuration:
+            return "configuration"
+        
+
+        }
+    }
+    
+    var parameters: [String : String] {
+        return [:]
+    }
+    
 }

@@ -19,12 +19,10 @@ public struct WebServiceConfiguration {
     
     private class Dummy {}
     
-    public static let `default` =
-        WebServiceConfiguration(language: Bundle.main.preferredLocalizations[0],
-                                apiKey: Bundle(for: WebServiceConfiguration.Dummy.self) .infoDictionary?["TMDB_API_KEY"] as? String ?? "")
-}
+    static let `default` = WebServiceConfiguration(language: Bundle.main.preferredLocalizations[0],
+                                                   apiKey: Bundle(for: WebServiceConfiguration.Dummy.self)
+                                                    .infoDictionary?["TMDB_API_KEY"] as? String ?? "")
 
-internal extension WebServiceConfiguration {
     var parameters: [String : String] {
         return [
             "api_key" : apiKey,
