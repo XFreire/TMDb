@@ -32,6 +32,10 @@
 		AC6C8BAF1F9102E8005BE6C0 /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6C8B9D1F9102BC005BE6C0 /* RxTest.framework */; };
 		AC6C8BB01F9102EB005BE6C0 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6C8B9B1F9102BC005BE6C0 /* RxBlocking.framework */; };
 		AC6C8BB41F910443005BE6C0 /* TMDbCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C8BB31F910443005BE6C0 /* TMDbCore.swift */; };
+		AC6C8BB71F910654005BE6C0 /* Keys.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = AC6C8BB61F910654005BE6C0 /* Keys.xcconfig */; };
+		AC6C8BBA1F910718005BE6C0 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C8BB91F910718005BE6C0 /* Endpoint.swift */; };
+		AC6C8BBC1F910897005BE6C0 /* WebServiceConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C8BBB1F910897005BE6C0 /* WebServiceConfiguration.swift */; };
+		AC6C8BBE1F9109C6005BE6C0 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C8BBD1F9109C6005BE6C0 /* WebService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +106,10 @@
 		AC6C8B9D1F9102BC005BE6C0 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = SOURCE_ROOT; };
 		AC6C8B9E1F9102BC005BE6C0 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = SOURCE_ROOT; };
 		AC6C8BB31F910443005BE6C0 /* TMDbCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDbCore.swift; sourceTree = "<group>"; };
+		AC6C8BB61F910654005BE6C0 /* Keys.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Keys.xcconfig; sourceTree = "<group>"; };
+		AC6C8BB91F910718005BE6C0 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		AC6C8BBB1F910897005BE6C0 /* WebServiceConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceConfiguration.swift; sourceTree = "<group>"; };
+		AC6C8BBD1F9109C6005BE6C0 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +207,8 @@
 		AC6C8B7B1F91006C005BE6C0 /* TMDbCore */ = {
 			isa = PBXGroup;
 			children = (
+				AC6C8BB81F91070D005BE6C0 /* WebService */,
+				AC6C8BB51F910600005BE6C0 /* Config */,
 				AC6C8B7C1F91006C005BE6C0 /* TMDbCore.h */,
 				AC6C8BB31F910443005BE6C0 /* TMDbCore.swift */,
 				AC6C8B7D1F91006C005BE6C0 /* Info.plist */,
@@ -225,6 +235,24 @@
 				AC6C8B9D1F9102BC005BE6C0 /* RxTest.framework */,
 			);
 			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		AC6C8BB51F910600005BE6C0 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				AC6C8BB61F910654005BE6C0 /* Keys.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		AC6C8BB81F91070D005BE6C0 /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				AC6C8BB91F910718005BE6C0 /* Endpoint.swift */,
+				AC6C8BBB1F910897005BE6C0 /* WebServiceConfiguration.swift */,
+				AC6C8BBD1F9109C6005BE6C0 /* WebService.swift */,
+			);
+			path = WebService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -391,6 +419,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC6C8BB71F910654005BE6C0 /* Keys.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +489,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC6C8BBA1F910718005BE6C0 /* Endpoint.swift in Sources */,
+				AC6C8BBC1F910897005BE6C0 /* WebServiceConfiguration.swift in Sources */,
+				AC6C8BBE1F9109C6005BE6C0 /* WebService.swift in Sources */,
 				AC6C8BB41F910443005BE6C0 /* TMDbCore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
