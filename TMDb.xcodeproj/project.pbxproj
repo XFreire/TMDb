@@ -31,6 +31,7 @@
 		AC6C8BAE1F9102E6005BE6C0 /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6C8B9D1F9102BC005BE6C0 /* RxTest.framework */; };
 		AC6C8BAF1F9102E8005BE6C0 /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6C8B9D1F9102BC005BE6C0 /* RxTest.framework */; };
 		AC6C8BB01F9102EB005BE6C0 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6C8B9B1F9102BC005BE6C0 /* RxBlocking.framework */; };
+		AC6C8BB41F910443005BE6C0 /* TMDbCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C8BB31F910443005BE6C0 /* TMDbCore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,7 @@
 		AC6C8B9C1F9102BC005BE6C0 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = SOURCE_ROOT; };
 		AC6C8B9D1F9102BC005BE6C0 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = SOURCE_ROOT; };
 		AC6C8B9E1F9102BC005BE6C0 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = SOURCE_ROOT; };
+		AC6C8BB31F910443005BE6C0 /* TMDbCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDbCore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				AC6C8B7C1F91006C005BE6C0 /* TMDbCore.h */,
+				AC6C8BB31F910443005BE6C0 /* TMDbCore.swift */,
 				AC6C8B7D1F91006C005BE6C0 /* Info.plist */,
 			);
 			path = TMDbCore;
@@ -335,6 +338,7 @@
 					};
 					AC6C8B791F91006C005BE6C0 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					AC6C8B811F91006C005BE6C0 = {
@@ -456,6 +460,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC6C8BB41F910443005BE6C0 /* TMDbCore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -622,6 +627,7 @@
 		AC6C8B701F90FEF3005BE6C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8LNA9LB2Y8;
@@ -641,6 +647,7 @@
 		AC6C8B711F90FEF3005BE6C0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8LNA9LB2Y8;
@@ -702,6 +709,7 @@
 		AC6C8B911F91006C005BE6C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -720,6 +728,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexandrefreire.TMDbCore;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -730,6 +739,7 @@
 		AC6C8B921F91006C005BE6C0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;

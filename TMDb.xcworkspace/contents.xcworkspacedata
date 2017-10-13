@@ -4,6 +4,9 @@
    <Group
       location = "container:"
       name = "Playgrounds">
+      <FileRef
+         location = "group:Playgrounds/MyPlayground.playground">
+      </FileRef>
    </Group>
    <FileRef
       location = "group:TMDb.xcodeproj">
