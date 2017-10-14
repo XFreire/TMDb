@@ -9,7 +9,7 @@
 import Foundation
 import Kingfisher
 
-final class ImageRepositoryAssembly {
+final class ImageLoadingAssembly {
     private(set) lazy var imageRepository: ImageRepositoryProtocol = ImageRepository(webService: webServiceAssembly.webService, imageManager: KingfisherManager.shared)
     
     private let webServiceAssembly: WebServiceAssembly

@@ -7,7 +7,8 @@ import PlaygroundSupport
 PlaygroundPage.current.needsIndefiniteExecution = true
 
 let disposeBag = DisposeBag()
-let webService = WebService()
+let assembly = CoreAssembly()
+let webService = assembly.webServiceAssembly.webService
 
 // Load configuration
 webService.load(Configuration.self, from: .configuration)

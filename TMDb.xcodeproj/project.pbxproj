@@ -36,11 +36,24 @@
 		AC6C8BBC1F910897005BE6C0 /* WebServiceConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C8BBB1F910897005BE6C0 /* WebServiceConfiguration.swift */; };
 		AC6C8BBE1F9109C6005BE6C0 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C8BBD1F9109C6005BE6C0 /* WebService.swift */; };
 		AC6C8BC11F912C5A005BE6C0 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C8BC01F912C5A005BE6C0 /* Configuration.swift */; };
+		AC995AA71F9218370007D195 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC995AA61F9218370007D195 /* SearchResult.swift */; };
+		AC995AAA1F9219CC0007D195 /* Date+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC995AA91F9219CC0007D195 /* Date+Utilities.swift */; };
+		AC995AAC1F921A190007D195 /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC995AAB1F921A190007D195 /* NibLoadableView.swift */; };
+		AC995AAE1F921A4E0007D195 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC995AAD1F921A4E0007D195 /* ReusableView.swift */; };
+		AC995AB01F921A760007D195 /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC995AAF1F921A760007D195 /* UITableView+Reusable.swift */; };
+		AC995AB51F9223360007D195 /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC995AB31F9223360007D195 /* SearchResultCell.swift */; };
+		AC995AB61F9223360007D195 /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC995AB41F9223360007D195 /* SearchResultCell.xib */; };
+		AC995AB81F9228340007D195 /* SearchResultPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC995AB71F9228340007D195 /* SearchResultPresenter.swift */; };
+		AC995ABA1F922A1D0007D195 /* SearchAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC995AB91F922A1D0007D195 /* SearchAssembly.swift */; };
 		ACE7A02F1F91F5D400A53671 /* ImageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7A02E1F91F5D400A53671 /* ImageRepository.swift */; };
 		ACE7A0311F91F64300A53671 /* ImageSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7A0301F91F64300A53671 /* ImageSize.swift */; };
 		ACE7A0341F91F90100A53671 /* CoreAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7A0331F91F90100A53671 /* CoreAssembly.swift */; };
 		ACE7A0361F91F91400A53671 /* ImageLoadingAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7A0351F91F91400A53671 /* ImageLoadingAssembly.swift */; };
 		ACE7A0381F91F95E00A53671 /* WebServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7A0371F91F95E00A53671 /* WebServiceAssembly.swift */; };
+		ACE7A03B1F92103E00A53671 /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7A03A1F92103E00A53671 /* Media.swift */; };
+		ACE7A03D1F92105400A53671 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7A03C1F92105400A53671 /* Movie.swift */; };
+		ACE7A03F1F92105A00A53671 /* Show.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7A03E1F92105A00A53671 /* Show.swift */; };
+		ACE7A0411F9210A800A53671 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7A0401F9210A800A53671 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,11 +129,24 @@
 		AC6C8BBD1F9109C6005BE6C0 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		AC6C8BC01F912C5A005BE6C0 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		AC6C8BC21F9130A3005BE6C0 /* Keys.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Keys.xcconfig; sourceTree = "<group>"; };
+		AC995AA61F9218370007D195 /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		AC995AA91F9219CC0007D195 /* Date+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Utilities.swift"; sourceTree = "<group>"; };
+		AC995AAB1F921A190007D195 /* NibLoadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
+		AC995AAD1F921A4E0007D195 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		AC995AAF1F921A760007D195 /* UITableView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
+		AC995AB31F9223360007D195 /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
+		AC995AB41F9223360007D195 /* SearchResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultCell.xib; sourceTree = "<group>"; };
+		AC995AB71F9228340007D195 /* SearchResultPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultPresenter.swift; sourceTree = "<group>"; };
+		AC995AB91F922A1D0007D195 /* SearchAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAssembly.swift; sourceTree = "<group>"; };
 		ACE7A02E1F91F5D400A53671 /* ImageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRepository.swift; sourceTree = "<group>"; };
 		ACE7A0301F91F64300A53671 /* ImageSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSize.swift; sourceTree = "<group>"; };
 		ACE7A0331F91F90100A53671 /* CoreAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreAssembly.swift; sourceTree = "<group>"; };
 		ACE7A0351F91F91400A53671 /* ImageLoadingAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoadingAssembly.swift; sourceTree = "<group>"; };
 		ACE7A0371F91F95E00A53671 /* WebServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceAssembly.swift; sourceTree = "<group>"; };
+		ACE7A03A1F92103E00A53671 /* Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
+		ACE7A03C1F92105400A53671 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		ACE7A03E1F92105A00A53671 /* Show.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Show.swift; sourceTree = "<group>"; };
+		ACE7A0401F9210A800A53671 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +196,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC31D5831F922A9B007D30BE /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				AC995AB91F922A1D0007D195 /* SearchAssembly.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
 		AC6C8B491F90FEF2005BE6C0 = {
 			isa = PBXGroup;
 			children = (
@@ -218,9 +252,12 @@
 		AC6C8B7B1F91006C005BE6C0 /* TMDbCore */ = {
 			isa = PBXGroup;
 			children = (
+				AC995AB11F9221840007D195 /* Search */,
 				ACE7A0321F91F8F400A53671 /* DI */,
 				AC6C8BBF1F912C44005BE6C0 /* Image Loading */,
 				AC6C8BB81F91070D005BE6C0 /* WebService */,
+				AC995AA81F9219BE0007D195 /* Utilities */,
+				ACE7A0391F920F6F00A53671 /* Domain */,
 				AC6C8BB51F910600005BE6C0 /* Config */,
 				AC6C8B7C1F91006C005BE6C0 /* TMDbCore.h */,
 				AC6C8BB31F910443005BE6C0 /* TMDbCore.swift */,
@@ -280,12 +317,54 @@
 			path = "Image Loading";
 			sourceTree = "<group>";
 		};
+		AC995AA81F9219BE0007D195 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				AC995AA91F9219CC0007D195 /* Date+Utilities.swift */,
+				AC995AAB1F921A190007D195 /* NibLoadableView.swift */,
+				AC995AAD1F921A4E0007D195 /* ReusableView.swift */,
+				AC995AAF1F921A760007D195 /* UITableView+Reusable.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		AC995AB11F9221840007D195 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				AC995AB21F9223010007D195 /* Presentation */,
+				AC31D5831F922A9B007D30BE /* DI */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		AC995AB21F9223010007D195 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				AC995AB31F9223360007D195 /* SearchResultCell.swift */,
+				AC995AB41F9223360007D195 /* SearchResultCell.xib */,
+				AC995AB71F9228340007D195 /* SearchResultPresenter.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
 		ACE7A0321F91F8F400A53671 /* DI */ = {
 			isa = PBXGroup;
 			children = (
 				ACE7A0331F91F90100A53671 /* CoreAssembly.swift */,
 			);
 			path = DI;
+			sourceTree = "<group>";
+		};
+		ACE7A0391F920F6F00A53671 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				ACE7A03A1F92103E00A53671 /* Media.swift */,
+				ACE7A03C1F92105400A53671 /* Movie.swift */,
+				ACE7A03E1F92105A00A53671 /* Show.swift */,
+				ACE7A0401F9210A800A53671 /* Person.swift */,
+				AC995AA61F9218370007D195 /* SearchResult.swift */,
+			);
+			path = Domain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -452,6 +531,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC995AB61F9223360007D195 /* SearchResultCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,14 +601,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACE7A03B1F92103E00A53671 /* Media.swift in Sources */,
 				AC6C8BBA1F910718005BE6C0 /* Endpoint.swift in Sources */,
+				AC995AB01F921A760007D195 /* UITableView+Reusable.swift in Sources */,
+				AC995ABA1F922A1D0007D195 /* SearchAssembly.swift in Sources */,
+				ACE7A03D1F92105400A53671 /* Movie.swift in Sources */,
+				AC995AB81F9228340007D195 /* SearchResultPresenter.swift in Sources */,
 				ACE7A02F1F91F5D400A53671 /* ImageRepository.swift in Sources */,
+				AC995AAA1F9219CC0007D195 /* Date+Utilities.swift in Sources */,
+				ACE7A0411F9210A800A53671 /* Person.swift in Sources */,
 				AC6C8BC11F912C5A005BE6C0 /* Configuration.swift in Sources */,
+				AC995AAC1F921A190007D195 /* NibLoadableView.swift in Sources */,
 				AC6C8BBC1F910897005BE6C0 /* WebServiceConfiguration.swift in Sources */,
+				AC995AAE1F921A4E0007D195 /* ReusableView.swift in Sources */,
 				ACE7A0381F91F95E00A53671 /* WebServiceAssembly.swift in Sources */,
 				AC6C8BBE1F9109C6005BE6C0 /* WebService.swift in Sources */,
 				ACE7A0311F91F64300A53671 /* ImageSize.swift in Sources */,
+				AC995AB51F9223360007D195 /* SearchResultCell.swift in Sources */,
+				AC995AA71F9218370007D195 /* SearchResult.swift in Sources */,
 				ACE7A0341F91F90100A53671 /* CoreAssembly.swift in Sources */,
+				ACE7A03F1F92105A00A53671 /* Show.swift in Sources */,
 				ACE7A0361F91F91400A53671 /* ImageLoadingAssembly.swift in Sources */,
 				AC6C8BB41F910443005BE6C0 /* TMDbCore.swift in Sources */,
 			);

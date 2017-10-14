@@ -10,6 +10,7 @@ import Foundation
 
 final public class CoreAssembly {
     
-    private(set) lazy var imageLoadingRepository = ImageRepositoryAssembly(webServiceAssembly: webServiceAssembly)
+    private(set) lazy var searchAssembly = SearchAssembly(imageLoadingAssembly: imageLoadingAssembly)
+    private(set) lazy var imageLoadingAssembly = ImageLoadingAssembly(webServiceAssembly: webServiceAssembly)
     private(set) lazy var webServiceAssembly = WebServiceAssembly()
 }

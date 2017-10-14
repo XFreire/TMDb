@@ -8,7 +8,7 @@ PlaygroundPage.current.needsIndefiniteExecution = true
 
 let disposeBag = DisposeBag()
 let assembly = CoreAssembly()
-let imageRepository = assembly.imageLoadingRepository.imageRepository
+let imageRepository = assembly.imageLoadingAssembly.imageRepository
 
 imageRepository.image(at: "ncEmkHADNggjR0dlerOIHqmiY0O.jpg", size: .w780)
     .subscribe(onNext: {
