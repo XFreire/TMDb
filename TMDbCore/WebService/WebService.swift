@@ -23,7 +23,7 @@ private struct Status: Decodable {
     }
 }
 
-final public class WebService {
+final internal class WebService {
     private let configuration: WebServiceConfiguration
     private let session = URLSession(configuration: .default)
     private let baseURL = URL(string: "https://api.themoviedb.org/3")!
@@ -33,7 +33,7 @@ final public class WebService {
         self.configuration = configuration
     }
     
-    public func load<T>(_ type: T.Type, from endpoint: Endpoint) -> Observable<T> where T: Decodable {
+    func load<T>(_ type: T.Type, from endpoint: Endpoint) -> Observable<T> where T: Decodable {
         let decoder = self.decoder
         let request = endpoint.request(with: baseURL, adding: configuration.parameters)
         

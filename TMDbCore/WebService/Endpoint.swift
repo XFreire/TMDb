@@ -8,11 +8,11 @@
 
 import Foundation
 
-public enum HTTPMethod: String {
+internal enum HTTPMethod: String {
     case get = "GET"
 }
 
-public enum Endpoint {
+internal enum Endpoint {
     case configuration
 }
 internal extension Endpoint {

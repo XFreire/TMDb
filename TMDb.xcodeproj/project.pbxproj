@@ -36,6 +36,11 @@
 		AC6C8BBC1F910897005BE6C0 /* WebServiceConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C8BBB1F910897005BE6C0 /* WebServiceConfiguration.swift */; };
 		AC6C8BBE1F9109C6005BE6C0 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C8BBD1F9109C6005BE6C0 /* WebService.swift */; };
 		AC6C8BC11F912C5A005BE6C0 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C8BC01F912C5A005BE6C0 /* Configuration.swift */; };
+		ACE7A02F1F91F5D400A53671 /* ImageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7A02E1F91F5D400A53671 /* ImageRepository.swift */; };
+		ACE7A0311F91F64300A53671 /* ImageSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7A0301F91F64300A53671 /* ImageSize.swift */; };
+		ACE7A0341F91F90100A53671 /* CoreAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7A0331F91F90100A53671 /* CoreAssembly.swift */; };
+		ACE7A0361F91F91400A53671 /* ImageLoadingAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7A0351F91F91400A53671 /* ImageLoadingAssembly.swift */; };
+		ACE7A0381F91F95E00A53671 /* WebServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7A0371F91F95E00A53671 /* WebServiceAssembly.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +116,11 @@
 		AC6C8BBD1F9109C6005BE6C0 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		AC6C8BC01F912C5A005BE6C0 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		AC6C8BC21F9130A3005BE6C0 /* Keys.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Keys.xcconfig; sourceTree = "<group>"; };
+		ACE7A02E1F91F5D400A53671 /* ImageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRepository.swift; sourceTree = "<group>"; };
+		ACE7A0301F91F64300A53671 /* ImageSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSize.swift; sourceTree = "<group>"; };
+		ACE7A0331F91F90100A53671 /* CoreAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreAssembly.swift; sourceTree = "<group>"; };
+		ACE7A0351F91F91400A53671 /* ImageLoadingAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoadingAssembly.swift; sourceTree = "<group>"; };
+		ACE7A0371F91F95E00A53671 /* WebServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceAssembly.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,7 +218,8 @@
 		AC6C8B7B1F91006C005BE6C0 /* TMDbCore */ = {
 			isa = PBXGroup;
 			children = (
-				AC6C8BBF1F912C44005BE6C0 /* Networking */,
+				ACE7A0321F91F8F400A53671 /* DI */,
+				AC6C8BBF1F912C44005BE6C0 /* Image Loading */,
 				AC6C8BB81F91070D005BE6C0 /* WebService */,
 				AC6C8BB51F910600005BE6C0 /* Config */,
 				AC6C8B7C1F91006C005BE6C0 /* TMDbCore.h */,
@@ -253,16 +264,28 @@
 				AC6C8BB91F910718005BE6C0 /* Endpoint.swift */,
 				AC6C8BBB1F910897005BE6C0 /* WebServiceConfiguration.swift */,
 				AC6C8BBD1F9109C6005BE6C0 /* WebService.swift */,
+				ACE7A0371F91F95E00A53671 /* WebServiceAssembly.swift */,
 			);
 			path = WebService;
 			sourceTree = "<group>";
 		};
-		AC6C8BBF1F912C44005BE6C0 /* Networking */ = {
+		AC6C8BBF1F912C44005BE6C0 /* Image Loading */ = {
 			isa = PBXGroup;
 			children = (
 				AC6C8BC01F912C5A005BE6C0 /* Configuration.swift */,
+				ACE7A02E1F91F5D400A53671 /* ImageRepository.swift */,
+				ACE7A0301F91F64300A53671 /* ImageSize.swift */,
+				ACE7A0351F91F91400A53671 /* ImageLoadingAssembly.swift */,
 			);
-			path = Networking;
+			path = "Image Loading";
+			sourceTree = "<group>";
+		};
+		ACE7A0321F91F8F400A53671 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				ACE7A0331F91F90100A53671 /* CoreAssembly.swift */,
+			);
+			path = DI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -499,9 +522,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC6C8BBA1F910718005BE6C0 /* Endpoint.swift in Sources */,
+				ACE7A02F1F91F5D400A53671 /* ImageRepository.swift in Sources */,
 				AC6C8BC11F912C5A005BE6C0 /* Configuration.swift in Sources */,
 				AC6C8BBC1F910897005BE6C0 /* WebServiceConfiguration.swift in Sources */,
+				ACE7A0381F91F95E00A53671 /* WebServiceAssembly.swift in Sources */,
 				AC6C8BBE1F9109C6005BE6C0 /* WebService.swift in Sources */,
+				ACE7A0311F91F64300A53671 /* ImageSize.swift in Sources */,
+				ACE7A0341F91F90100A53671 /* CoreAssembly.swift in Sources */,
+				ACE7A0361F91F91400A53671 /* ImageLoadingAssembly.swift in Sources */,
 				AC6C8BB41F910443005BE6C0 /* TMDbCore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
