@@ -20,7 +20,7 @@ extension UITableView {
         register(nib, forCellReuseIdentifier: T.defaultReuseIdentifier)
     }
     
-    func dequeueReusableCell<T: UITableViewCell>() -> T where T: ReusableView {
+    func dequeueReusableCell<T: UITableViewCell>(_: T.Type) -> T where T: ReusableView {
         guard let cell = dequeueReusableCell(withIdentifier: T.defaultReuseIdentifier) as? T else {
             fatalError("Could not dequeue cell with identifier: \(T.defaultReuseIdentifier)")
         }
@@ -28,7 +28,7 @@ extension UITableView {
         return cell
     }
     
-    func dequeueReusableCell<T: UITableViewCell>(for indexPath: IndexPath) -> T where T: ReusableView {
+    func dequeueReusableCell<T: UITableViewCell>(_: T.Type, for indexPath: IndexPath) -> T where T: ReusableView {
         guard let cell = dequeueReusableCell(withIdentifier: T.defaultReuseIdentifier, for: indexPath) as? T else {
             fatalError("Could not dequeue cell with identifier: \(T.defaultReuseIdentifier)")
         }
@@ -36,7 +36,8 @@ extension UITableView {
         return cell
     }
     
-    func dequeueReusableCell<T: UITableViewCell>(for row: Int) -> T where T: ReusableView {
-        return dequeueReusableCell(for: IndexPath(row: row, section: 0))
+    func dequeueReusableCell<T: UITableViewCell>(_: T.Type, for row: Int) -> T where T: ReusableView {
+        return dequeueReusableCell(T.self, for: IndexPath(row: row, section: 0))
     }
 }
+

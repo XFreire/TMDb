@@ -16,7 +16,15 @@ final class SearchAssembly {
         self.imageLoadingAssembly = imageLoadingAssembly
     }
     
-    func searchResultPresenter() -> SearchResultPresenter{
-        return SearchResultPresenter(imageRepository: imageLoadingAssembly.imageRepository)
+    func viewController() -> SearchResultsViewController {
+        return SearchResultsViewController(presenter: presenter(), resultPresenter: resultPresenter())
+    }
+    
+    func presenter() -> SearchResultsPresenter {
+        return SearchResultsPresenter()
+    }
+    
+    func resultPresenter() -> SearchResultCellPresenter{
+        return SearchResultCellPresenter(imageRepository: imageLoadingAssembly.imageRepository)
     }
 }

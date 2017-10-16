@@ -8,7 +8,8 @@
 
 import RxSwift
 
-final class SearchResultPresenter {
+/// Presents search results in cells
+final class SearchResultCellPresenter {
     private let imageRepository: ImageRepositoryProtocol
     
     init(imageRepository: ImageRepositoryProtocol) {
@@ -27,7 +28,7 @@ final class SearchResultPresenter {
     }
 }
 
-private extension SearchResultPresenter {
+private extension SearchResultCellPresenter {
     func present(movie: Movie, in cell: SearchResultCell) {
         bindImage(at: movie.posterPath, to: cell)
         

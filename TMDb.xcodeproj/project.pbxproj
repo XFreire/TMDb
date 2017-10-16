@@ -43,8 +43,10 @@
 		AC995AB01F921A760007D195 /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC995AAF1F921A760007D195 /* UITableView+Reusable.swift */; };
 		AC995AB51F9223360007D195 /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC995AB31F9223360007D195 /* SearchResultCell.swift */; };
 		AC995AB61F9223360007D195 /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC995AB41F9223360007D195 /* SearchResultCell.xib */; };
-		AC995AB81F9228340007D195 /* SearchResultPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC995AB71F9228340007D195 /* SearchResultPresenter.swift */; };
+		AC995AB81F9228340007D195 /* SearchResultCellPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC995AB71F9228340007D195 /* SearchResultCellPresenter.swift */; };
 		AC995ABA1F922A1D0007D195 /* SearchAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC995AB91F922A1D0007D195 /* SearchAssembly.swift */; };
+		ACAF63C81F94A5D900BD9FF1 /* SearchResultsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAF63C71F94A5D900BD9FF1 /* SearchResultsPresenter.swift */; };
+		ACAF63CA1F94A69B00BD9FF1 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAF63C91F94A69B00BD9FF1 /* SearchResultsViewController.swift */; };
 		ACE7A02F1F91F5D400A53671 /* ImageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7A02E1F91F5D400A53671 /* ImageRepository.swift */; };
 		ACE7A0311F91F64300A53671 /* ImageSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7A0301F91F64300A53671 /* ImageSize.swift */; };
 		ACE7A0341F91F90100A53671 /* CoreAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7A0331F91F90100A53671 /* CoreAssembly.swift */; };
@@ -136,8 +138,10 @@
 		AC995AAF1F921A760007D195 /* UITableView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
 		AC995AB31F9223360007D195 /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
 		AC995AB41F9223360007D195 /* SearchResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultCell.xib; sourceTree = "<group>"; };
-		AC995AB71F9228340007D195 /* SearchResultPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultPresenter.swift; sourceTree = "<group>"; };
+		AC995AB71F9228340007D195 /* SearchResultCellPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCellPresenter.swift; sourceTree = "<group>"; };
 		AC995AB91F922A1D0007D195 /* SearchAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAssembly.swift; sourceTree = "<group>"; };
+		ACAF63C71F94A5D900BD9FF1 /* SearchResultsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsPresenter.swift; sourceTree = "<group>"; };
+		ACAF63C91F94A69B00BD9FF1 /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
 		ACE7A02E1F91F5D400A53671 /* ImageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRepository.swift; sourceTree = "<group>"; };
 		ACE7A0301F91F64300A53671 /* ImageSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSize.swift; sourceTree = "<group>"; };
 		ACE7A0331F91F90100A53671 /* CoreAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreAssembly.swift; sourceTree = "<group>"; };
@@ -331,8 +335,8 @@
 		AC995AB11F9221840007D195 /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				AC995AB21F9223010007D195 /* Presentation */,
 				AC31D5831F922A9B007D30BE /* DI */,
+				AC995AB21F9223010007D195 /* Presentation */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -342,7 +346,9 @@
 			children = (
 				AC995AB31F9223360007D195 /* SearchResultCell.swift */,
 				AC995AB41F9223360007D195 /* SearchResultCell.xib */,
-				AC995AB71F9228340007D195 /* SearchResultPresenter.swift */,
+				AC995AB71F9228340007D195 /* SearchResultCellPresenter.swift */,
+				ACAF63C71F94A5D900BD9FF1 /* SearchResultsPresenter.swift */,
+				ACAF63C91F94A69B00BD9FF1 /* SearchResultsViewController.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -602,11 +608,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACE7A03B1F92103E00A53671 /* Media.swift in Sources */,
+				ACAF63CA1F94A69B00BD9FF1 /* SearchResultsViewController.swift in Sources */,
 				AC6C8BBA1F910718005BE6C0 /* Endpoint.swift in Sources */,
 				AC995AB01F921A760007D195 /* UITableView+Reusable.swift in Sources */,
 				AC995ABA1F922A1D0007D195 /* SearchAssembly.swift in Sources */,
+				ACAF63C81F94A5D900BD9FF1 /* SearchResultsPresenter.swift in Sources */,
 				ACE7A03D1F92105400A53671 /* Movie.swift in Sources */,
-				AC995AB81F9228340007D195 /* SearchResultPresenter.swift in Sources */,
+				AC995AB81F9228340007D195 /* SearchResultCellPresenter.swift in Sources */,
 				ACE7A02F1F91F5D400A53671 /* ImageRepository.swift in Sources */,
 				AC995AAA1F9219CC0007D195 /* Date+Utilities.swift in Sources */,
 				ACE7A0411F9210A800A53671 /* Person.swift in Sources */,
