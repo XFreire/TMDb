@@ -5,6 +5,9 @@
       location = "container:"
       name = "Playgrounds">
       <FileRef
+         location = "group:Playgrounds/Featured.playground">
+      </FileRef>
+      <FileRef
          location = "group:Playgrounds/Search.playground">
       </FileRef>
       <FileRef

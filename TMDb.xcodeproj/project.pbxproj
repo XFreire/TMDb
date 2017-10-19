@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC65F2411F99120300D2BA6D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC65F2401F99120300D2BA6D /* CardView.swift */; };
+		AC65F2431F99121500D2BA6D /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC65F2421F99121500D2BA6D /* CardView.xib */; };
+		AC65F2451F9916F900D2BA6D /* CardPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC65F2441F9916F900D2BA6D /* CardPresenter.swift */; };
+		AC65F2471F99179E00D2BA6D /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC65F2461F99179E00D2BA6D /* Genre.swift */; };
+		AC65F2491F99193200D2BA6D /* genres.json in Resources */ = {isa = PBXBuildFile; fileRef = AC65F2481F99193200D2BA6D /* genres.json */; };
+		AC65F24C1F991B2C00D2BA6D /* FeaturedAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC65F24B1F991B2C00D2BA6D /* FeaturedAssembly.swift */; };
 		AC6C8B561F90FEF2005BE6C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C8B551F90FEF2005BE6C0 /* AppDelegate.swift */; };
 		AC6C8B581F90FEF2005BE6C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C8B571F90FEF2005BE6C0 /* ViewController.swift */; };
 		AC6C8B5B1F90FEF2005BE6C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC6C8B591F90FEF2005BE6C0 /* Main.storyboard */; };
@@ -47,6 +53,7 @@
 		AC995ABA1F922A1D0007D195 /* SearchAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC995AB91F922A1D0007D195 /* SearchAssembly.swift */; };
 		ACAF63C81F94A5D900BD9FF1 /* SearchResultsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAF63C71F94A5D900BD9FF1 /* SearchResultsPresenter.swift */; };
 		ACAF63CA1F94A69B00BD9FF1 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAF63C91F94A69B00BD9FF1 /* SearchResultsViewController.swift */; };
+		ACAF63CD1F94BA6100BD9FF1 /* Core.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACAF63CC1F94BA6100BD9FF1 /* Core.xcassets */; };
 		ACE7A02F1F91F5D400A53671 /* ImageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7A02E1F91F5D400A53671 /* ImageRepository.swift */; };
 		ACE7A0311F91F64300A53671 /* ImageSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7A0301F91F64300A53671 /* ImageSize.swift */; };
 		ACE7A0341F91F90100A53671 /* CoreAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7A0331F91F90100A53671 /* CoreAssembly.swift */; };
@@ -104,6 +111,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AC65F2401F99120300D2BA6D /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		AC65F2421F99121500D2BA6D /* CardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
+		AC65F2441F9916F900D2BA6D /* CardPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPresenter.swift; sourceTree = "<group>"; };
+		AC65F2461F99179E00D2BA6D /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
+		AC65F2481F99193200D2BA6D /* genres.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = genres.json; sourceTree = "<group>"; };
+		AC65F24B1F991B2C00D2BA6D /* FeaturedAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedAssembly.swift; sourceTree = "<group>"; };
 		AC6C8B521F90FEF2005BE6C0 /* TMDb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TMDb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC6C8B551F90FEF2005BE6C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC6C8B571F90FEF2005BE6C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -142,6 +155,7 @@
 		AC995AB91F922A1D0007D195 /* SearchAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAssembly.swift; sourceTree = "<group>"; };
 		ACAF63C71F94A5D900BD9FF1 /* SearchResultsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsPresenter.swift; sourceTree = "<group>"; };
 		ACAF63C91F94A69B00BD9FF1 /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
+		ACAF63CC1F94BA6100BD9FF1 /* Core.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Core.xcassets; sourceTree = "<group>"; };
 		ACE7A02E1F91F5D400A53671 /* ImageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRepository.swift; sourceTree = "<group>"; };
 		ACE7A0301F91F64300A53671 /* ImageSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSize.swift; sourceTree = "<group>"; };
 		ACE7A0331F91F90100A53671 /* CoreAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreAssembly.swift; sourceTree = "<group>"; };
@@ -208,6 +222,43 @@
 			path = DI;
 			sourceTree = "<group>";
 		};
+		AC65F23D1F99109600D2BA6D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				ACE7A0391F920F6F00A53671 /* Domain */,
+				AC995AA81F9219BE0007D195 /* Utilities */,
+				ACAF63CB1F94BA4A00BD9FF1 /* Assets */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		AC65F23E1F9911BA00D2BA6D /* Featured */ = {
+			isa = PBXGroup;
+			children = (
+				AC65F24A1F991B2000D2BA6D /* DI */,
+				AC65F23F1F9911DA00D2BA6D /* Presentation */,
+			);
+			path = Featured;
+			sourceTree = "<group>";
+		};
+		AC65F23F1F9911DA00D2BA6D /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				AC65F2401F99120300D2BA6D /* CardView.swift */,
+				AC65F2421F99121500D2BA6D /* CardView.xib */,
+				AC65F2441F9916F900D2BA6D /* CardPresenter.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		AC65F24A1F991B2000D2BA6D /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				AC65F24B1F991B2C00D2BA6D /* FeaturedAssembly.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
 		AC6C8B491F90FEF2005BE6C0 = {
 			isa = PBXGroup;
 			children = (
@@ -256,12 +307,12 @@
 		AC6C8B7B1F91006C005BE6C0 /* TMDbCore */ = {
 			isa = PBXGroup;
 			children = (
-				AC995AB11F9221840007D195 /* Search */,
+				AC65F23E1F9911BA00D2BA6D /* Featured */,
 				ACE7A0321F91F8F400A53671 /* DI */,
+				AC995AB11F9221840007D195 /* Search */,
 				AC6C8BBF1F912C44005BE6C0 /* Image Loading */,
 				AC6C8BB81F91070D005BE6C0 /* WebService */,
-				AC995AA81F9219BE0007D195 /* Utilities */,
-				ACE7A0391F920F6F00A53671 /* Domain */,
+				AC65F23D1F99109600D2BA6D /* Common */,
 				AC6C8BB51F910600005BE6C0 /* Config */,
 				AC6C8B7C1F91006C005BE6C0 /* TMDbCore.h */,
 				AC6C8BB31F910443005BE6C0 /* TMDbCore.swift */,
@@ -353,6 +404,14 @@
 			path = Presentation;
 			sourceTree = "<group>";
 		};
+		ACAF63CB1F94BA4A00BD9FF1 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				ACAF63CC1F94BA6100BD9FF1 /* Core.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		ACE7A0321F91F8F400A53671 /* DI */ = {
 			isa = PBXGroup;
 			children = (
@@ -369,6 +428,8 @@
 				ACE7A03E1F92105A00A53671 /* Show.swift */,
 				ACE7A0401F9210A800A53671 /* Person.swift */,
 				AC995AA61F9218370007D195 /* SearchResult.swift */,
+				AC65F2461F99179E00D2BA6D /* Genre.swift */,
+				AC65F2481F99193200D2BA6D /* genres.json */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -537,7 +598,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACAF63CD1F94BA6100BD9FF1 /* Core.xcassets in Resources */,
 				AC995AB61F9223360007D195 /* SearchResultCell.xib in Resources */,
+				AC65F2431F99121500D2BA6D /* CardView.xib in Resources */,
+				AC65F2491F99193200D2BA6D /* genres.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -607,10 +671,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC65F2471F99179E00D2BA6D /* Genre.swift in Sources */,
 				ACE7A03B1F92103E00A53671 /* Media.swift in Sources */,
 				ACAF63CA1F94A69B00BD9FF1 /* SearchResultsViewController.swift in Sources */,
 				AC6C8BBA1F910718005BE6C0 /* Endpoint.swift in Sources */,
 				AC995AB01F921A760007D195 /* UITableView+Reusable.swift in Sources */,
+				AC65F24C1F991B2C00D2BA6D /* FeaturedAssembly.swift in Sources */,
 				AC995ABA1F922A1D0007D195 /* SearchAssembly.swift in Sources */,
 				ACAF63C81F94A5D900BD9FF1 /* SearchResultsPresenter.swift in Sources */,
 				ACE7A03D1F92105400A53671 /* Movie.swift in Sources */,
@@ -621,6 +687,7 @@
 				AC6C8BC11F912C5A005BE6C0 /* Configuration.swift in Sources */,
 				AC995AAC1F921A190007D195 /* NibLoadableView.swift in Sources */,
 				AC6C8BBC1F910897005BE6C0 /* WebServiceConfiguration.swift in Sources */,
+				AC65F2411F99120300D2BA6D /* CardView.swift in Sources */,
 				AC995AAE1F921A4E0007D195 /* ReusableView.swift in Sources */,
 				ACE7A0381F91F95E00A53671 /* WebServiceAssembly.swift in Sources */,
 				AC6C8BBE1F9109C6005BE6C0 /* WebService.swift in Sources */,
@@ -628,6 +695,7 @@
 				AC995AB51F9223360007D195 /* SearchResultCell.swift in Sources */,
 				AC995AA71F9218370007D195 /* SearchResult.swift in Sources */,
 				ACE7A0341F91F90100A53671 /* CoreAssembly.swift in Sources */,
+				AC65F2451F9916F900D2BA6D /* CardPresenter.swift in Sources */,
 				ACE7A03F1F92105A00A53671 /* Show.swift in Sources */,
 				ACE7A0361F91F91400A53671 /* ImageLoadingAssembly.swift in Sources */,
 				AC6C8BB41F910443005BE6C0 /* TMDbCore.swift in Sources */,
