@@ -58,6 +58,8 @@
 		ACB9CB171F9A15580012E1A2 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACB9CB151F9A15580012E1A2 /* DetailViewController.xib */; };
 		ACB9CB191F9A16A60012E1A2 /* DetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB9CB181F9A16A60012E1A2 /* DetailHeaderView.swift */; };
 		ACB9CB1B1F9A16B00012E1A2 /* DetailHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACB9CB1A1F9A16B00012E1A2 /* DetailHeaderView.xib */; };
+		ACB9CB1D1F9A1E760012E1A2 /* DetailAboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB9CB1C1F9A1E760012E1A2 /* DetailAboutView.swift */; };
+		ACB9CB1F1F9A1E9A0012E1A2 /* DetailAboutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACB9CB1E1F9A1E9A0012E1A2 /* DetailAboutView.xib */; };
 		ACE02B9A1F9A0579006738C0 /* FeaturedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE02B981F9A0579006738C0 /* FeaturedViewController.swift */; };
 		ACE02B9B1F9A0579006738C0 /* FeaturedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACE02B991F9A0579006738C0 /* FeaturedViewController.xib */; };
 		ACE02B9D1F9A0BD1006738C0 /* FeaturedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE02B9C1F9A0BD1006738C0 /* FeaturedPresenter.swift */; };
@@ -167,6 +169,8 @@
 		ACB9CB151F9A15580012E1A2 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		ACB9CB181F9A16A60012E1A2 /* DetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeaderView.swift; sourceTree = "<group>"; };
 		ACB9CB1A1F9A16B00012E1A2 /* DetailHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailHeaderView.xib; sourceTree = "<group>"; };
+		ACB9CB1C1F9A1E760012E1A2 /* DetailAboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAboutView.swift; sourceTree = "<group>"; };
+		ACB9CB1E1F9A1E9A0012E1A2 /* DetailAboutView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailAboutView.xib; sourceTree = "<group>"; };
 		ACE02B981F9A0579006738C0 /* FeaturedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedViewController.swift; sourceTree = "<group>"; };
 		ACE02B991F9A0579006738C0 /* FeaturedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeaturedViewController.xib; sourceTree = "<group>"; };
 		ACE02B9C1F9A0BD1006738C0 /* FeaturedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedPresenter.swift; sourceTree = "<group>"; };
@@ -445,6 +449,8 @@
 				ACB9CB151F9A15580012E1A2 /* DetailViewController.xib */,
 				ACB9CB181F9A16A60012E1A2 /* DetailHeaderView.swift */,
 				ACB9CB1A1F9A16B00012E1A2 /* DetailHeaderView.xib */,
+				ACB9CB1C1F9A1E760012E1A2 /* DetailAboutView.swift */,
+				ACB9CB1E1F9A1E9A0012E1A2 /* DetailAboutView.xib */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -640,6 +646,7 @@
 				ACAF63CD1F94BA6100BD9FF1 /* Core.xcassets in Resources */,
 				AC995AB61F9223360007D195 /* SearchResultCell.xib in Resources */,
 				AC65F2431F99121500D2BA6D /* CardView.xib in Resources */,
+				ACB9CB1F1F9A1E9A0012E1A2 /* DetailAboutView.xib in Resources */,
 				AC65F2491F99193200D2BA6D /* genres.json in Resources */,
 				ACB9CB1B1F9A16B00012E1A2 /* DetailHeaderView.xib in Resources */,
 			);
@@ -727,6 +734,7 @@
 				ACE7A0411F9210A800A53671 /* Person.swift in Sources */,
 				AC6C8BC11F912C5A005BE6C0 /* Configuration.swift in Sources */,
 				AC995AAC1F921A190007D195 /* NibLoadableView.swift in Sources */,
+				ACB9CB1D1F9A1E760012E1A2 /* DetailAboutView.swift in Sources */,
 				AC6C8BBC1F910897005BE6C0 /* WebServiceConfiguration.swift in Sources */,
 				AC65F2411F99120300D2BA6D /* CardView.swift in Sources */,
 				AC995AAE1F921A4E0007D195 /* ReusableView.swift in Sources */,
