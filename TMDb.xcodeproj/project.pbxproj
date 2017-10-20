@@ -56,6 +56,8 @@
 		ACAF63CD1F94BA6100BD9FF1 /* Core.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACAF63CC1F94BA6100BD9FF1 /* Core.xcassets */; };
 		ACB9CB161F9A15580012E1A2 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB9CB141F9A15580012E1A2 /* DetailViewController.swift */; };
 		ACB9CB171F9A15580012E1A2 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACB9CB151F9A15580012E1A2 /* DetailViewController.xib */; };
+		ACB9CB191F9A16A60012E1A2 /* DetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB9CB181F9A16A60012E1A2 /* DetailHeaderView.swift */; };
+		ACB9CB1B1F9A16B00012E1A2 /* DetailHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACB9CB1A1F9A16B00012E1A2 /* DetailHeaderView.xib */; };
 		ACE02B9A1F9A0579006738C0 /* FeaturedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE02B981F9A0579006738C0 /* FeaturedViewController.swift */; };
 		ACE02B9B1F9A0579006738C0 /* FeaturedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACE02B991F9A0579006738C0 /* FeaturedViewController.xib */; };
 		ACE02B9D1F9A0BD1006738C0 /* FeaturedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE02B9C1F9A0BD1006738C0 /* FeaturedPresenter.swift */; };
@@ -163,6 +165,8 @@
 		ACAF63CC1F94BA6100BD9FF1 /* Core.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Core.xcassets; sourceTree = "<group>"; };
 		ACB9CB141F9A15580012E1A2 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		ACB9CB151F9A15580012E1A2 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		ACB9CB181F9A16A60012E1A2 /* DetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeaderView.swift; sourceTree = "<group>"; };
+		ACB9CB1A1F9A16B00012E1A2 /* DetailHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailHeaderView.xib; sourceTree = "<group>"; };
 		ACE02B981F9A0579006738C0 /* FeaturedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedViewController.swift; sourceTree = "<group>"; };
 		ACE02B991F9A0579006738C0 /* FeaturedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeaturedViewController.xib; sourceTree = "<group>"; };
 		ACE02B9C1F9A0BD1006738C0 /* FeaturedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedPresenter.swift; sourceTree = "<group>"; };
@@ -439,6 +443,8 @@
 			children = (
 				ACB9CB141F9A15580012E1A2 /* DetailViewController.swift */,
 				ACB9CB151F9A15580012E1A2 /* DetailViewController.xib */,
+				ACB9CB181F9A16A60012E1A2 /* DetailHeaderView.swift */,
+				ACB9CB1A1F9A16B00012E1A2 /* DetailHeaderView.xib */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -635,6 +641,7 @@
 				AC995AB61F9223360007D195 /* SearchResultCell.xib in Resources */,
 				AC65F2431F99121500D2BA6D /* CardView.xib in Resources */,
 				AC65F2491F99193200D2BA6D /* genres.json in Resources */,
+				ACB9CB1B1F9A16B00012E1A2 /* DetailHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -712,6 +719,7 @@
 				AC65F24C1F991B2C00D2BA6D /* FeaturedAssembly.swift in Sources */,
 				AC995ABA1F922A1D0007D195 /* SearchAssembly.swift in Sources */,
 				ACAF63C81F94A5D900BD9FF1 /* SearchResultsPresenter.swift in Sources */,
+				ACB9CB191F9A16A60012E1A2 /* DetailHeaderView.swift in Sources */,
 				ACE7A03D1F92105400A53671 /* Movie.swift in Sources */,
 				AC995AB81F9228340007D195 /* SearchResultCellPresenter.swift in Sources */,
 				ACE7A02F1F91F5D400A53671 /* ImageRepository.swift in Sources */,
