@@ -9,7 +9,7 @@
 import Foundation
 
 final public class CoreAssembly {
-    
+    private(set) lazy var featuredAssembly = FeaturedAssembly(imageLoadingAssembly: imageLoadingAssembly)
     private(set) lazy var detailAssembly = DetailAssembly(imageLoadingAssembly: imageLoadingAssembly)
     private(set) lazy var featuredAssembly = FeaturedAssembly(imageLoadingAssembly: imageLoadingAssembly)
     private(set) lazy var searchAssembly = SearchAssembly(imageLoadingAssembly: imageLoadingAssembly)

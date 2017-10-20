@@ -8,14 +8,14 @@
 
 import Foundation
 
-final class FeaturedAssembly {
+final public class FeaturedAssembly {
     private let imageLoadingAssembly: ImageLoadingAssembly
     
     init(imageLoadingAssembly: ImageLoadingAssembly) {
         self.imageLoadingAssembly = imageLoadingAssembly
     }
     
-    func viewController() -> FeaturedViewController {
+    public func viewController() -> UIViewController {
         return FeaturedViewController(presenter: presenter(), cardPresenter: cardPresenter())
     }
     
