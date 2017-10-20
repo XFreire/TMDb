@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC17B62C1F9A3DEC00F0F479 /* PosterStripCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17B62A1F9A3DEC00F0F479 /* PosterStripCell.swift */; };
+		AC17B62D1F9A3DEC00F0F479 /* PosterStripCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC17B62B1F9A3DEC00F0F479 /* PosterStripCell.xib */; };
 		AC65F2411F99120300D2BA6D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC65F2401F99120300D2BA6D /* CardView.swift */; };
 		AC65F2431F99121500D2BA6D /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC65F2421F99121500D2BA6D /* CardView.xib */; };
 		AC65F2451F9916F900D2BA6D /* CardPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC65F2441F9916F900D2BA6D /* CardPresenter.swift */; };
@@ -120,6 +122,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AC17B62A1F9A3DEC00F0F479 /* PosterStripCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterStripCell.swift; sourceTree = "<group>"; };
+		AC17B62B1F9A3DEC00F0F479 /* PosterStripCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PosterStripCell.xib; sourceTree = "<group>"; };
 		AC65F2401F99120300D2BA6D /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		AC65F2421F99121500D2BA6D /* CardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
 		AC65F2441F9916F900D2BA6D /* CardPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPresenter.swift; sourceTree = "<group>"; };
@@ -451,6 +455,8 @@
 				ACB9CB1A1F9A16B00012E1A2 /* DetailHeaderView.xib */,
 				ACB9CB1C1F9A1E760012E1A2 /* DetailAboutView.swift */,
 				ACB9CB1E1F9A1E9A0012E1A2 /* DetailAboutView.xib */,
+				AC17B62A1F9A3DEC00F0F479 /* PosterStripCell.swift */,
+				AC17B62B1F9A3DEC00F0F479 /* PosterStripCell.xib */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -643,6 +649,7 @@
 			files = (
 				ACE02B9B1F9A0579006738C0 /* FeaturedViewController.xib in Resources */,
 				ACB9CB171F9A15580012E1A2 /* DetailViewController.xib in Resources */,
+				AC17B62D1F9A3DEC00F0F479 /* PosterStripCell.xib in Resources */,
 				ACAF63CD1F94BA6100BD9FF1 /* Core.xcassets in Resources */,
 				AC995AB61F9223360007D195 /* SearchResultCell.xib in Resources */,
 				AC65F2431F99121500D2BA6D /* CardView.xib in Resources */,
@@ -749,6 +756,7 @@
 				AC65F2451F9916F900D2BA6D /* CardPresenter.swift in Sources */,
 				ACE7A03F1F92105A00A53671 /* Show.swift in Sources */,
 				ACE7A0361F91F91400A53671 /* ImageLoadingAssembly.swift in Sources */,
+				AC17B62C1F9A3DEC00F0F479 /* PosterStripCell.swift in Sources */,
 				ACE02B9A1F9A0579006738C0 /* FeaturedViewController.swift in Sources */,
 				AC6C8BB41F910443005BE6C0 /* TMDbCore.swift in Sources */,
 			);
