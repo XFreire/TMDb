@@ -47,7 +47,7 @@ private extension CardPresenter {
 
         imageRepository.image(at: path, size: .w780)
             .observeOn(MainScheduler.instance)
-            .subscribe(onNext: { cardView.backdropView.image = $0 })
+            .bind(to: cardView.backdropView.rx.image)
             .disposed(by: cardView.disposeBag)
     }
 }

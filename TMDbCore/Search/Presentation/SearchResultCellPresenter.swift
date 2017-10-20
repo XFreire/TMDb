@@ -84,7 +84,7 @@ private extension SearchResultCellPresenter {
         
         imageRepository.image(at: path, size: .w154)
             .observeOn(MainScheduler.instance)
-            .subscribe(onNext: { cell.posterView.image = $0 })
+            .bind(to: cell.posterView.rx.image)
             .disposed(by: cell.disposeBag)
     }
 }

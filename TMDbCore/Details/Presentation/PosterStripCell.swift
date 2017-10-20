@@ -8,7 +8,7 @@
 
 import RxSwift
 
-class PosterStripCell: UICollectionViewCell {
+final class PosterStripCell: UICollectionViewCell, ReusableView, NibLoadableView {
 
     // MARK: - Outlets
     @IBOutlet weak var posterView: UIImageView!

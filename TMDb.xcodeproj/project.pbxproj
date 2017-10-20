@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		AC17B62C1F9A3DEC00F0F479 /* PosterStripCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17B62A1F9A3DEC00F0F479 /* PosterStripCell.swift */; };
 		AC17B62D1F9A3DEC00F0F479 /* PosterStripCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC17B62B1F9A3DEC00F0F479 /* PosterStripCell.xib */; };
+		AC17B62F1F9A401700F0F479 /* MediaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17B62E1F9A401700F0F479 /* MediaType.swift */; };
+		AC17B6311F9A404200F0F479 /* UICollectionView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17B6301F9A404200F0F479 /* UICollectionView+Reusable.swift */; };
+		AC17B6341F9A408400F0F479 /* DetailsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17B6331F9A408400F0F479 /* DetailsAssembly.swift */; };
+		AC17B6361F9A40DF00F0F479 /* PosterStripItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17B6351F9A40DF00F0F479 /* PosterStripItem.swift */; };
+		AC17B6381F9A411400F0F479 /* PosterStripPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17B6371F9A411400F0F479 /* PosterStripPresenter.swift */; };
+		AC17B63A1F9A423500F0F479 /* PosterStripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17B6391F9A423500F0F479 /* PosterStripView.swift */; };
+		AC17B63F1F9A427700F0F479 /* PosterStripView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC17B63E1F9A427700F0F479 /* PosterStripView.xib */; };
+		AC17B6411F9A47B500F0F479 /* PosterStripLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17B6401F9A47B500F0F479 /* PosterStripLayout.swift */; };
 		AC65F2411F99120300D2BA6D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC65F2401F99120300D2BA6D /* CardView.swift */; };
 		AC65F2431F99121500D2BA6D /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC65F2421F99121500D2BA6D /* CardView.xib */; };
 		AC65F2451F9916F900D2BA6D /* CardPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC65F2441F9916F900D2BA6D /* CardPresenter.swift */; };
@@ -124,6 +132,14 @@
 /* Begin PBXFileReference section */
 		AC17B62A1F9A3DEC00F0F479 /* PosterStripCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterStripCell.swift; sourceTree = "<group>"; };
 		AC17B62B1F9A3DEC00F0F479 /* PosterStripCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PosterStripCell.xib; sourceTree = "<group>"; };
+		AC17B62E1F9A401700F0F479 /* MediaType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaType.swift; sourceTree = "<group>"; };
+		AC17B6301F9A404200F0F479 /* UICollectionView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Reusable.swift"; sourceTree = "<group>"; };
+		AC17B6331F9A408400F0F479 /* DetailsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsAssembly.swift; sourceTree = "<group>"; };
+		AC17B6351F9A40DF00F0F479 /* PosterStripItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterStripItem.swift; sourceTree = "<group>"; };
+		AC17B6371F9A411400F0F479 /* PosterStripPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterStripPresenter.swift; sourceTree = "<group>"; };
+		AC17B6391F9A423500F0F479 /* PosterStripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterStripView.swift; sourceTree = "<group>"; };
+		AC17B63E1F9A427700F0F479 /* PosterStripView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PosterStripView.xib; sourceTree = "<group>"; };
+		AC17B6401F9A47B500F0F479 /* PosterStripLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterStripLayout.swift; sourceTree = "<group>"; };
 		AC65F2401F99120300D2BA6D /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		AC65F2421F99121500D2BA6D /* CardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
 		AC65F2441F9916F900D2BA6D /* CardPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPresenter.swift; sourceTree = "<group>"; };
@@ -236,6 +252,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC17B6321F9A407C00F0F479 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				AC17B6331F9A408400F0F479 /* DetailsAssembly.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
 		AC31D5831F922A9B007D30BE /* DI */ = {
 			isa = PBXGroup;
 			children = (
@@ -332,8 +356,8 @@
 		AC6C8B7B1F91006C005BE6C0 /* TMDbCore */ = {
 			isa = PBXGroup;
 			children = (
-				ACB9CB121F9A15300012E1A2 /* Details */,
 				ACE7A0321F91F8F400A53671 /* DI */,
+				ACB9CB121F9A15300012E1A2 /* Details */,
 				AC65F23E1F9911BA00D2BA6D /* Featured */,
 				AC995AB11F9221840007D195 /* Search */,
 				AC6C8BBF1F912C44005BE6C0 /* Image Loading */,
@@ -405,6 +429,7 @@
 				AC995AAB1F921A190007D195 /* NibLoadableView.swift */,
 				AC995AAD1F921A4E0007D195 /* ReusableView.swift */,
 				AC995AAF1F921A760007D195 /* UITableView+Reusable.swift */,
+				AC17B6301F9A404200F0F479 /* UICollectionView+Reusable.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -441,6 +466,7 @@
 		ACB9CB121F9A15300012E1A2 /* Details */ = {
 			isa = PBXGroup;
 			children = (
+				AC17B6321F9A407C00F0F479 /* DI */,
 				ACB9CB131F9A153F0012E1A2 /* Presentation */,
 			);
 			path = Details;
@@ -457,6 +483,11 @@
 				ACB9CB1E1F9A1E9A0012E1A2 /* DetailAboutView.xib */,
 				AC17B62A1F9A3DEC00F0F479 /* PosterStripCell.swift */,
 				AC17B62B1F9A3DEC00F0F479 /* PosterStripCell.xib */,
+				AC17B6351F9A40DF00F0F479 /* PosterStripItem.swift */,
+				AC17B6371F9A411400F0F479 /* PosterStripPresenter.swift */,
+				AC17B6391F9A423500F0F479 /* PosterStripView.swift */,
+				AC17B63E1F9A427700F0F479 /* PosterStripView.xib */,
+				AC17B6401F9A47B500F0F479 /* PosterStripLayout.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -479,6 +510,7 @@
 				AC995AA61F9218370007D195 /* SearchResult.swift */,
 				AC65F2461F99179E00D2BA6D /* Genre.swift */,
 				AC65F2481F99193200D2BA6D /* genres.json */,
+				AC17B62E1F9A401700F0F479 /* MediaType.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -651,6 +683,7 @@
 				ACB9CB171F9A15580012E1A2 /* DetailViewController.xib in Resources */,
 				AC17B62D1F9A3DEC00F0F479 /* PosterStripCell.xib in Resources */,
 				ACAF63CD1F94BA6100BD9FF1 /* Core.xcassets in Resources */,
+				AC17B63F1F9A427700F0F479 /* PosterStripView.xib in Resources */,
 				AC995AB61F9223360007D195 /* SearchResultCell.xib in Resources */,
 				AC65F2431F99121500D2BA6D /* CardView.xib in Resources */,
 				ACB9CB1F1F9A1E9A0012E1A2 /* DetailAboutView.xib in Resources */,
@@ -729,6 +762,7 @@
 				ACE7A03B1F92103E00A53671 /* Media.swift in Sources */,
 				ACAF63CA1F94A69B00BD9FF1 /* SearchResultsViewController.swift in Sources */,
 				AC6C8BBA1F910718005BE6C0 /* Endpoint.swift in Sources */,
+				AC17B6381F9A411400F0F479 /* PosterStripPresenter.swift in Sources */,
 				AC995AB01F921A760007D195 /* UITableView+Reusable.swift in Sources */,
 				AC65F24C1F991B2C00D2BA6D /* FeaturedAssembly.swift in Sources */,
 				AC995ABA1F922A1D0007D195 /* SearchAssembly.swift in Sources */,
@@ -736,6 +770,7 @@
 				ACB9CB191F9A16A60012E1A2 /* DetailHeaderView.swift in Sources */,
 				ACE7A03D1F92105400A53671 /* Movie.swift in Sources */,
 				AC995AB81F9228340007D195 /* SearchResultCellPresenter.swift in Sources */,
+				AC17B6341F9A408400F0F479 /* DetailsAssembly.swift in Sources */,
 				ACE7A02F1F91F5D400A53671 /* ImageRepository.swift in Sources */,
 				AC995AAA1F9219CC0007D195 /* Date+Utilities.swift in Sources */,
 				ACE7A0411F9210A800A53671 /* Person.swift in Sources */,
@@ -745,6 +780,8 @@
 				AC6C8BBC1F910897005BE6C0 /* WebServiceConfiguration.swift in Sources */,
 				AC65F2411F99120300D2BA6D /* CardView.swift in Sources */,
 				AC995AAE1F921A4E0007D195 /* ReusableView.swift in Sources */,
+				AC17B62F1F9A401700F0F479 /* MediaType.swift in Sources */,
+				AC17B6411F9A47B500F0F479 /* PosterStripLayout.swift in Sources */,
 				ACE02B9D1F9A0BD1006738C0 /* FeaturedPresenter.swift in Sources */,
 				ACB9CB161F9A15580012E1A2 /* DetailViewController.swift in Sources */,
 				ACE7A0381F91F95E00A53671 /* WebServiceAssembly.swift in Sources */,
@@ -756,7 +793,10 @@
 				AC65F2451F9916F900D2BA6D /* CardPresenter.swift in Sources */,
 				ACE7A03F1F92105A00A53671 /* Show.swift in Sources */,
 				ACE7A0361F91F91400A53671 /* ImageLoadingAssembly.swift in Sources */,
+				AC17B63A1F9A423500F0F479 /* PosterStripView.swift in Sources */,
 				AC17B62C1F9A3DEC00F0F479 /* PosterStripCell.swift in Sources */,
+				AC17B6361F9A40DF00F0F479 /* PosterStripItem.swift in Sources */,
+				AC17B6311F9A404200F0F479 /* UICollectionView+Reusable.swift in Sources */,
 				ACE02B9A1F9A0579006738C0 /* FeaturedViewController.swift in Sources */,
 				AC6C8BB41F910443005BE6C0 /* TMDbCore.swift in Sources */,
 			);
