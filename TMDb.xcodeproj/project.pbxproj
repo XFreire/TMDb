@@ -54,6 +54,9 @@
 		ACAF63C81F94A5D900BD9FF1 /* SearchResultsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAF63C71F94A5D900BD9FF1 /* SearchResultsPresenter.swift */; };
 		ACAF63CA1F94A69B00BD9FF1 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAF63C91F94A69B00BD9FF1 /* SearchResultsViewController.swift */; };
 		ACAF63CD1F94BA6100BD9FF1 /* Core.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACAF63CC1F94BA6100BD9FF1 /* Core.xcassets */; };
+		ACE02B9A1F9A0579006738C0 /* FeaturedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE02B981F9A0579006738C0 /* FeaturedViewController.swift */; };
+		ACE02B9B1F9A0579006738C0 /* FeaturedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACE02B991F9A0579006738C0 /* FeaturedViewController.xib */; };
+		ACE02B9D1F9A0BD1006738C0 /* FeaturedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE02B9C1F9A0BD1006738C0 /* FeaturedPresenter.swift */; };
 		ACE7A02F1F91F5D400A53671 /* ImageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7A02E1F91F5D400A53671 /* ImageRepository.swift */; };
 		ACE7A0311F91F64300A53671 /* ImageSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7A0301F91F64300A53671 /* ImageSize.swift */; };
 		ACE7A0341F91F90100A53671 /* CoreAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7A0331F91F90100A53671 /* CoreAssembly.swift */; };
@@ -156,6 +159,9 @@
 		ACAF63C71F94A5D900BD9FF1 /* SearchResultsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsPresenter.swift; sourceTree = "<group>"; };
 		ACAF63C91F94A69B00BD9FF1 /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
 		ACAF63CC1F94BA6100BD9FF1 /* Core.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Core.xcassets; sourceTree = "<group>"; };
+		ACE02B981F9A0579006738C0 /* FeaturedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedViewController.swift; sourceTree = "<group>"; };
+		ACE02B991F9A0579006738C0 /* FeaturedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeaturedViewController.xib; sourceTree = "<group>"; };
+		ACE02B9C1F9A0BD1006738C0 /* FeaturedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedPresenter.swift; sourceTree = "<group>"; };
 		ACE7A02E1F91F5D400A53671 /* ImageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRepository.swift; sourceTree = "<group>"; };
 		ACE7A0301F91F64300A53671 /* ImageSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSize.swift; sourceTree = "<group>"; };
 		ACE7A0331F91F90100A53671 /* CoreAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreAssembly.swift; sourceTree = "<group>"; };
@@ -247,6 +253,9 @@
 				AC65F2401F99120300D2BA6D /* CardView.swift */,
 				AC65F2421F99121500D2BA6D /* CardView.xib */,
 				AC65F2441F9916F900D2BA6D /* CardPresenter.swift */,
+				ACE02B981F9A0579006738C0 /* FeaturedViewController.swift */,
+				ACE02B991F9A0579006738C0 /* FeaturedViewController.xib */,
+				ACE02B9C1F9A0BD1006738C0 /* FeaturedPresenter.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -598,6 +607,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACE02B9B1F9A0579006738C0 /* FeaturedViewController.xib in Resources */,
 				ACAF63CD1F94BA6100BD9FF1 /* Core.xcassets in Resources */,
 				AC995AB61F9223360007D195 /* SearchResultCell.xib in Resources */,
 				AC65F2431F99121500D2BA6D /* CardView.xib in Resources */,
@@ -689,6 +699,7 @@
 				AC6C8BBC1F910897005BE6C0 /* WebServiceConfiguration.swift in Sources */,
 				AC65F2411F99120300D2BA6D /* CardView.swift in Sources */,
 				AC995AAE1F921A4E0007D195 /* ReusableView.swift in Sources */,
+				ACE02B9D1F9A0BD1006738C0 /* FeaturedPresenter.swift in Sources */,
 				ACE7A0381F91F95E00A53671 /* WebServiceAssembly.swift in Sources */,
 				AC6C8BBE1F9109C6005BE6C0 /* WebService.swift in Sources */,
 				ACE7A0311F91F64300A53671 /* ImageSize.swift in Sources */,
@@ -698,6 +709,7 @@
 				AC65F2451F9916F900D2BA6D /* CardPresenter.swift in Sources */,
 				ACE7A03F1F92105A00A53671 /* Show.swift in Sources */,
 				ACE7A0361F91F91400A53671 /* ImageLoadingAssembly.swift in Sources */,
+				ACE02B9A1F9A0579006738C0 /* FeaturedViewController.swift in Sources */,
 				AC6C8BB41F910443005BE6C0 /* TMDbCore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

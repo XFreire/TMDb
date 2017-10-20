@@ -15,6 +15,14 @@ final class FeaturedAssembly {
         self.imageLoadingAssembly = imageLoadingAssembly
     }
     
+    func viewController() -> FeaturedViewController {
+        return FeaturedViewController(presenter: presenter(), cardPresenter: cardPresenter())
+    }
+    
+    func presenter() -> FeaturedPresenter {
+        return FeaturedPresenter()
+    }
+    
     func cardPresenter() -> CardPresenter {
         return CardPresenter(imageRepository: imageLoadingAssembly.imageRepository)
     }

@@ -42,7 +42,7 @@
                             </label>
                         </subviews>
                     </stackView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="27a-2a-WmK">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="27a-2a-WmK">
                         <rect key="frame" x="8" y="8" width="50" height="74"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="74" id="Y1R-l9-DFP"/>

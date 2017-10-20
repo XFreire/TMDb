@@ -15,7 +15,7 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="176"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zvu-nC-BSr">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="Zvu-nC-BSr">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="176"/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackdropGradient" translatesAutoresizingMaskIntoConstraints="NO" id="sZr-pd-4Qa">
