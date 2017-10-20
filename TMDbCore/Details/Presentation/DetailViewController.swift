@@ -7,32 +7,102 @@
 //
 
 import UIKit
+import RxSwift
 
 class DetailViewController: UIViewController {
+    
+    // MARK: - Outlets
     @IBOutlet weak var stackView: UIStackView!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var loadingView: UIActivityIndicatorView!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    // MARK: - Properties
+    private let presenter: DetailPresenter
+    private let headerPresenter: DetailHeaderPresenter
+    private let posterStripPresenter: PosterStripPresenter
+    
+    // MARK: - Initialization
+    init(presenter: DetailPresenter, headerPresenter: DetailHeaderPresenter, posterStripPresenter: PosterStripPresenter) {
+        self.presenter = presenter
+        self.headerPresenter = headerPresenter
+        self.posterStripPresenter = posterStripPresenter
+        
+        super.init(nibName: nil, bundle: Bundle(for: type(of: self)))
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
-    */
+    
+    // MARK: - Life Cycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        presenter.view = self
+        presenter.didLoad()
+    }
+}
 
+extension DetailViewController: DetailView {
+    func setLoading(_ loading: Bool) {
+        if loading {
+            scrollView.isHidden = true
+            loadingView.startAnimating()
+        } else {
+            scrollView.isHidden = false
+            loadingView.stopAnimating()
+        }
+    }
+    
+    func update(with sections: [DetailSection]) {
+        stackView.arrangedSubviews.forEach{ $0.removeFromSuperview() }
+        sections.forEach{ addView(for: $0) }
+    }
+}
+
+private extension DetailViewController {
+    func addView(for secion: DetailSection) {
+        let view: UIView
+        
+        switch secion {
+        case .header(let header):
+            view = headerView(with: header)
+        case .about(let title, let detail):
+            view = aboutView(withTitle: title, detail: detail)
+        case .posterStrip(let title, let items):
+            view = posterStrip(withTitle: title, items: items)
+        }
+        
+        stackView.addArrangedSubview(view)
+    }
+    
+    func headerView(with header: DetailHeader) -> UIView {
+        let headerView = DetailHeaderView.instantiate()
+        headerPresenter.present(header: header, in: headerView)
+        
+        return headerView
+    }
+    
+    func aboutView(withTitle title: String, detail: String) -> UIView{
+        let aboutView = DetailAboutView.instantiate()
+        aboutView.titleLabel.text = title
+        aboutView.detailLabel.text = detail
+        
+        return aboutView
+    }
+    
+    func posterStrip(withTitle title: String, items: [PosterStripItem]) -> UIView {
+        let posterStripView = PosterStripView.instantiate()
+        posterStripView.presenter = posterStripPresenter
+        posterStripView.title = title
+        posterStripView.items = items
+        
+        posterStripView.itemSelected
+            .subscribe(onNext: { [weak self] item in
+                self?.presenter.didSelect(item: item)
+            })
+            .disposed(by: posterStripView.disposeBag)
+        
+        return posterStripView
+    }
 }

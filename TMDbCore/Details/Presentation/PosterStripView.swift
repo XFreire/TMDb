@@ -34,8 +34,15 @@ final class PosterStripView: UIView, NibLoadableView {
         set { _items.value = newValue }
     }
     
+    var itemSelected: ControlEvent<PosterStripItem> {
+        return collectionView.rx.modelSelected(PosterStripItem.self)
+    }
+    
+    let disposeBag = DisposeBag()
+    
     private let _items = Variable<[PosterStripItem]>([])
-    private let disposeBag = DisposeBag()
+    
+    
     
     // MARK: - Overrides
     override func awakeFromNib() {

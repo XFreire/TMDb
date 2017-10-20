@@ -8,11 +8,15 @@
 
 import Foundation
 
-final class DetailsAssembly {
+final class DetailAssembly {
     private let imageLoadingAssembly: ImageLoadingAssembly
     
     init(imageLoadingAssembly: ImageLoadingAssembly) {
         self.imageLoadingAssembly = imageLoadingAssembly
+    }
+    
+    func detailHeaderPresenter() -> DetailHeaderPresenter {
+        return DetailHeaderPresenter(imageRepository: imageLoadingAssembly.imageRepository)
     }
     
     func posterStripPresenter() -> PosterStripPresenter {
