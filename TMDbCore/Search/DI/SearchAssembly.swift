@@ -16,8 +16,8 @@ final class SearchAssembly {
         self.imageLoadingAssembly = imageLoadingAssembly
     }
     
-    func viewController() -> SearchResultsViewController {
-        return SearchResultsViewController(presenter: presenter(), resultPresenter: resultPresenter())
+    func searchNavigator() -> SearchNavigator {
+        return PhoneSearchNavigator(viewControllerProvider: self)
     }
     
     func presenter() -> SearchResultsPresenter {
@@ -27,4 +27,13 @@ final class SearchAssembly {
     func resultPresenter() -> SearchResultCellPresenter{
         return SearchResultCellPresenter(imageRepository: imageLoadingAssembly.imageRepository)
     }
+}
+
+
+extension SearchAssembly: SearchResultsViewControllerProvider {
+    func searchResultsViewController() -> SearchResultsViewController {
+        return SearchResultsViewController(presenter: presenter(), resultPresenter: resultPresenter())
+    }
+    
+    
 }
