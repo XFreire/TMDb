@@ -11,9 +11,10 @@ import Foundation
 final class SearchAssembly {
     
     private let imageLoadingAssembly: ImageLoadingAssembly
-    
-    init(imageLoadingAssembly: ImageLoadingAssembly) {
+    private let detailAssembly: DetailAssembly
+    init(imageLoadingAssembly: ImageLoadingAssembly, detailAssembly: DetailAssembly) {
         self.imageLoadingAssembly = imageLoadingAssembly
+        self.detailAssembly = detailAssembly
     }
     
     func searchNavigator() -> SearchNavigator {
@@ -21,7 +22,7 @@ final class SearchAssembly {
     }
     
     func presenter() -> SearchResultsPresenter {
-        return SearchResultsPresenter()
+        return SearchResultsPresenter(detailNavigator: detailAssembly.detailNavigator())
     }
     
     func resultPresenter() -> SearchResultCellPresenter{
