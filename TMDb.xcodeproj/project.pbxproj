@@ -16,6 +16,7 @@
 		AC17B63A1F9A423500F0F479 /* PosterStripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17B6391F9A423500F0F479 /* PosterStripView.swift */; };
 		AC17B63F1F9A427700F0F479 /* PosterStripView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC17B63E1F9A427700F0F479 /* PosterStripView.xib */; };
 		AC17B6411F9A47B500F0F479 /* PosterStripLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17B6401F9A47B500F0F479 /* PosterStripLayout.swift */; };
+		AC2197C11F9B53A600B25C00 /* AppAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2197C01F9B53A600B25C00 /* AppAssembly.swift */; };
 		AC65F2411F99120300D2BA6D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC65F2401F99120300D2BA6D /* CardView.swift */; };
 		AC65F2431F99121500D2BA6D /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC65F2421F99121500D2BA6D /* CardView.xib */; };
 		AC65F2451F9916F900D2BA6D /* CardPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC65F2441F9916F900D2BA6D /* CardPresenter.swift */; };
@@ -139,6 +140,7 @@
 		AC17B6391F9A423500F0F479 /* PosterStripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterStripView.swift; sourceTree = "<group>"; };
 		AC17B63E1F9A427700F0F479 /* PosterStripView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PosterStripView.xib; sourceTree = "<group>"; };
 		AC17B6401F9A47B500F0F479 /* PosterStripLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterStripLayout.swift; sourceTree = "<group>"; };
+		AC2197C01F9B53A600B25C00 /* AppAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssembly.swift; sourceTree = "<group>"; };
 		AC65F2401F99120300D2BA6D /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		AC65F2421F99121500D2BA6D /* CardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
 		AC65F2441F9916F900D2BA6D /* CardPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPresenter.swift; sourceTree = "<group>"; };
@@ -311,11 +313,11 @@
 		AC6C8B491F90FEF2005BE6C0 = {
 			isa = PBXGroup;
 			children = (
-				AC6C8B991F91027D005BE6C0 /* Frameworks */,
 				AC6C8B541F90FEF2005BE6C0 /* TMDb */,
 				AC6C8B691F90FEF3005BE6C0 /* TMDbTests */,
 				AC6C8B7B1F91006C005BE6C0 /* TMDbCore */,
 				AC6C8B881F91006C005BE6C0 /* TMDbCoreTests */,
+				AC6C8B991F91027D005BE6C0 /* Frameworks */,
 				AC6C8B531F90FEF2005BE6C0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -335,6 +337,7 @@
 			isa = PBXGroup;
 			children = (
 				AC6C8B551F90FEF2005BE6C0 /* AppDelegate.swift */,
+				AC2197C01F9B53A600B25C00 /* AppAssembly.swift */,
 				AC6C8B5C1F90FEF2005BE6C0 /* Assets.xcassets */,
 				AC6C8B5E1F90FEF2005BE6C0 /* LaunchScreen.storyboard */,
 				AC6C8B611F90FEF2005BE6C0 /* Info.plist */,
@@ -749,6 +752,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC6C8B561F90FEF2005BE6C0 /* AppDelegate.swift in Sources */,
+				AC2197C11F9B53A600B25C00 /* AppAssembly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
