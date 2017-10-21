@@ -12,9 +12,12 @@ final class SearchAssembly {
     
     private let imageLoadingAssembly: ImageLoadingAssembly
     private let detailAssembly: DetailAssembly
-    init(imageLoadingAssembly: ImageLoadingAssembly, detailAssembly: DetailAssembly) {
+    private let webServiceAssembly: WebServiceAssembly
+    
+    init(imageLoadingAssembly: ImageLoadingAssembly, detailAssembly: DetailAssembly, webServiceAssembly: WebServiceAssembly) {
         self.imageLoadingAssembly = imageLoadingAssembly
         self.detailAssembly = detailAssembly
+        self.webServiceAssembly = webServiceAssembly
     }
     
     func searchNavigator() -> SearchNavigator {
@@ -26,7 +29,7 @@ final class SearchAssembly {
     }
     
     func resultPresenter() -> SearchResultCellPresenter{
-        return SearchResultCellPresenter(imageRepository: imageLoadingAssembly.imageRepository)
+        return SearchResultCellPresenter(imageRepository: imageLoadingAssembly.imageRepository, dateFormatter: webServiceAssembly.dateFormatter)
     }
 }
 

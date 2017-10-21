@@ -14,6 +14,8 @@ internal enum HTTPMethod: String {
 
 internal enum Endpoint {
     case configuration
+    case moviesNowPlaying(region: String, page: Int)
+    case showsOnTheAir(page: Int)
 }
 internal extension Endpoint {
     func request(with baseURL: URL, adding parameters: [String : String]) -> URLRequest {
@@ -42,13 +44,27 @@ private extension Endpoint {
         switch self {
         case .configuration:
             return "configuration"
-        
-
+        case .moviesNowPlaying:
+            return "movie/now_playing"
+        case .showsOnTheAir:
+            return "tv/on_the_air"
         }
     }
     
     var parameters: [String : String] {
-        return [:]
+        switch self {
+        case .moviesNowPlaying(let region, let page):
+            return [
+                "page" : String(page),
+                "region": region
+            ]
+        case .showsOnTheAir(let page):
+            return [
+                "page" : String(page)
+            ]
+        case .configuration:
+            return [:]
+        }
     }
     
 }
