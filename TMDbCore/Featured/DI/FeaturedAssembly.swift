@@ -26,7 +26,11 @@ final public class FeaturedAssembly {
     }
     
     func presenter() -> FeaturedPresenter {
-        return FeaturedPresenter(detailNavigator: detailAssembly.detailNavigator())
+        return FeaturedPresenter(detailNavigator: detailAssembly.detailNavigator(), repository: featuredRepository())
+    }
+    
+    func featuredRepository() -> FeaturedRepositoryProtocol {
+        return FeaturedRepository(webService: webServiceAssembly.webService)
     }
     
     func cardPresenter() -> CardPresenter {
