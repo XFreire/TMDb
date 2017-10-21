@@ -20,6 +20,11 @@ protocol FeaturedView: class {
 
 final class FeaturedPresenter {
     weak var view: FeaturedView?
+    private let detailNavigator: DetailNavigator
+    
+    init(detailNavigator: DetailNavigator) {
+        self.detailNavigator = detailNavigator
+    }
     
     func didLoad() {
         view?.title = NSLocalizedString("Featured", comment: "")
@@ -30,11 +35,11 @@ final class FeaturedPresenter {
     }
     
     func didSelect(show: Show) {
-        // TODO: implement
+        detailNavigator.showDetail(withIdentifier: show.identifier, mediaType: .show)
     }
     
     func didSelect(movie: Movie) {
-        // TODO: implement
+        detailNavigator.showDetail(withIdentifier: movie.identifier, mediaType: .movie)
     }
 }
 

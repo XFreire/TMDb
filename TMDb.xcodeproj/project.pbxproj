@@ -17,6 +17,8 @@
 		AC17B63F1F9A427700F0F479 /* PosterStripView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC17B63E1F9A427700F0F479 /* PosterStripView.xib */; };
 		AC17B6411F9A47B500F0F479 /* PosterStripLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17B6401F9A47B500F0F479 /* PosterStripLayout.swift */; };
 		AC2197C11F9B53A600B25C00 /* AppAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2197C01F9B53A600B25C00 /* AppAssembly.swift */; };
+		AC2197C51F9B611000B25C00 /* DetailNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2197C41F9B611000B25C00 /* DetailNavigator.swift */; };
+		AC2197C71F9B626500B25C00 /* PhoneDetailNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2197C61F9B626500B25C00 /* PhoneDetailNavigator.swift */; };
 		AC65F2411F99120300D2BA6D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC65F2401F99120300D2BA6D /* CardView.swift */; };
 		AC65F2431F99121500D2BA6D /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC65F2421F99121500D2BA6D /* CardView.xib */; };
 		AC65F2451F9916F900D2BA6D /* CardPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC65F2441F9916F900D2BA6D /* CardPresenter.swift */; };
@@ -141,6 +143,8 @@
 		AC17B63E1F9A427700F0F479 /* PosterStripView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PosterStripView.xib; sourceTree = "<group>"; };
 		AC17B6401F9A47B500F0F479 /* PosterStripLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterStripLayout.swift; sourceTree = "<group>"; };
 		AC2197C01F9B53A600B25C00 /* AppAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssembly.swift; sourceTree = "<group>"; };
+		AC2197C41F9B611000B25C00 /* DetailNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailNavigator.swift; sourceTree = "<group>"; };
+		AC2197C61F9B626500B25C00 /* PhoneDetailNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneDetailNavigator.swift; sourceTree = "<group>"; };
 		AC65F2401F99120300D2BA6D /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		AC65F2421F99121500D2BA6D /* CardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
 		AC65F2441F9916F900D2BA6D /* CardPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPresenter.swift; sourceTree = "<group>"; };
@@ -260,6 +264,15 @@
 				AC17B6331F9A408400F0F479 /* DetailAssembly.swift */,
 			);
 			path = DI;
+			sourceTree = "<group>";
+		};
+		AC2197C31F9B610100B25C00 /* Navigators */ = {
+			isa = PBXGroup;
+			children = (
+				AC2197C41F9B611000B25C00 /* DetailNavigator.swift */,
+				AC2197C61F9B626500B25C00 /* PhoneDetailNavigator.swift */,
+			);
+			path = Navigators;
 			sourceTree = "<group>";
 		};
 		AC31D5831F922A9B007D30BE /* DI */ = {
@@ -475,6 +488,7 @@
 		ACB9CB121F9A15300012E1A2 /* Details */ = {
 			isa = PBXGroup;
 			children = (
+				AC2197C31F9B610100B25C00 /* Navigators */,
 				ACA41D6B1F9A548C00527B70 /* Domain */,
 				AC17B6321F9A407C00F0F479 /* DI */,
 				ACB9CB131F9A153F0012E1A2 /* Presentation */,
@@ -794,6 +808,7 @@
 				AC995AAE1F921A4E0007D195 /* ReusableView.swift in Sources */,
 				AC17B62F1F9A401700F0F479 /* MediaType.swift in Sources */,
 				AC17B6411F9A47B500F0F479 /* PosterStripLayout.swift in Sources */,
+				AC2197C51F9B611000B25C00 /* DetailNavigator.swift in Sources */,
 				ACE02B9D1F9A0BD1006738C0 /* FeaturedPresenter.swift in Sources */,
 				ACB9CB161F9A15580012E1A2 /* DetailViewController.swift in Sources */,
 				ACE7A0381F91F95E00A53671 /* WebServiceAssembly.swift in Sources */,
@@ -804,6 +819,7 @@
 				ACE7A0341F91F90100A53671 /* CoreAssembly.swift in Sources */,
 				AC65F2451F9916F900D2BA6D /* CardPresenter.swift in Sources */,
 				ACE7A03F1F92105A00A53671 /* Show.swift in Sources */,
+				AC2197C71F9B626500B25C00 /* PhoneDetailNavigator.swift in Sources */,
 				ACE7A0361F91F91400A53671 /* ImageLoadingAssembly.swift in Sources */,
 				AC17B63A1F9A423500F0F479 /* PosterStripView.swift in Sources */,
 				AC17B62C1F9A3DEC00F0F479 /* PosterStripCell.swift in Sources */,
