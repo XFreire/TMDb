@@ -17,6 +17,7 @@ internal enum Endpoint {
     case moviesNowPlaying(region: String, page: Int)
     case showsOnTheAir(page: Int)
     case searchResults(query: String, page: Int)
+    case movie(identifier: Int64)
 }
 internal extension Endpoint {
     func request(with baseURL: URL, adding parameters: [String : String]) -> URLRequest {
@@ -51,6 +52,8 @@ private extension Endpoint {
             return "tv/on_the_air"
         case .searchResults:
             return "search/multi"
+        case .movie(let id):
+            return "movie/\(id)"
         }
     }
     
@@ -71,6 +74,10 @@ private extension Endpoint {
             return [
                 "query" : query,
                 "page" : String(page)
+            ]
+        case .movie:
+            return [
+                "append_to_response" : "credits"
             ]
         }
         
