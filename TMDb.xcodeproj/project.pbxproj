@@ -56,6 +56,7 @@
 		AC6C8BC11F912C5A005BE6C0 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6C8BC01F912C5A005BE6C0 /* Configuration.swift */; };
 		AC7EB79B1F9B97C0002B214A /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7EB79A1F9B97C0002B214A /* Page.swift */; };
 		AC7EB79E1F9BA387002B214A /* FeaturedRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7EB79D1F9BA387002B214A /* FeaturedRepository.swift */; };
+		AC7EB7A11F9BAF18002B214A /* SearchResultsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7EB7A01F9BAF18002B214A /* SearchResultsRepository.swift */; };
 		AC995AA71F9218370007D195 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC995AA61F9218370007D195 /* SearchResult.swift */; };
 		AC995AAA1F9219CC0007D195 /* Date+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC995AA91F9219CC0007D195 /* Date+Utilities.swift */; };
 		AC995AAC1F921A190007D195 /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC995AAB1F921A190007D195 /* NibLoadableView.swift */; };
@@ -184,6 +185,7 @@
 		AC6C8BC21F9130A3005BE6C0 /* Keys.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Keys.xcconfig; sourceTree = "<group>"; };
 		AC7EB79A1F9B97C0002B214A /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		AC7EB79D1F9BA387002B214A /* FeaturedRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedRepository.swift; sourceTree = "<group>"; };
+		AC7EB7A01F9BAF18002B214A /* SearchResultsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsRepository.swift; sourceTree = "<group>"; };
 		AC995AA61F9218370007D195 /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 		AC995AA91F9219CC0007D195 /* Date+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Utilities.swift"; sourceTree = "<group>"; };
 		AC995AAB1F921A190007D195 /* NibLoadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
@@ -471,6 +473,14 @@
 			path = Repositories;
 			sourceTree = "<group>";
 		};
+		AC7EB79F1F9BAF06002B214A /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				AC7EB7A01F9BAF18002B214A /* SearchResultsRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
 		AC995AA81F9219BE0007D195 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -486,6 +496,7 @@
 		AC995AB11F9221840007D195 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				AC7EB79F1F9BAF06002B214A /* Repositories */,
 				AC2197C81F9B6E9C00B25C00 /* Navigators */,
 				AC31D5831F922A9B007D30BE /* DI */,
 				AC995AB21F9223010007D195 /* Presentation */,
@@ -842,6 +853,7 @@
 				ACB9CB1D1F9A1E760012E1A2 /* DetailAboutView.swift in Sources */,
 				AC6C8BBC1F910897005BE6C0 /* WebServiceConfiguration.swift in Sources */,
 				AC65F2411F99120300D2BA6D /* CardView.swift in Sources */,
+				AC7EB7A11F9BAF18002B214A /* SearchResultsRepository.swift in Sources */,
 				AC995AAE1F921A4E0007D195 /* ReusableView.swift in Sources */,
 				AC7EB79E1F9BA387002B214A /* FeaturedRepository.swift in Sources */,
 				AC17B62F1F9A401700F0F479 /* MediaType.swift in Sources */,

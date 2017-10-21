@@ -25,9 +25,12 @@ final class SearchAssembly {
     }
     
     func presenter() -> SearchResultsPresenter {
-        return SearchResultsPresenter(detailNavigator: detailAssembly.detailNavigator())
+        return SearchResultsPresenter(detailNavigator: detailAssembly.detailNavigator(), repository: searchRepository())
     }
     
+    func searchRepository() -> SearchResulsRepositoryProtocol {
+        return SearchResultsRepository(webService: webServiceAssembly.webService)
+    }
     func resultPresenter() -> SearchResultCellPresenter{
         return SearchResultCellPresenter(imageRepository: imageLoadingAssembly.imageRepository, dateFormatter: webServiceAssembly.dateFormatter)
     }

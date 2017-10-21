@@ -14,22 +14,27 @@ import RxSwift
 final class SearchResultsPresenter {
     
     private let detailNavigator: DetailNavigator
+    private let repository: SearchResulsRepositoryProtocol
     
     /// The search query
     let query = Variable("")
     
     /// The search results
-    private(set) lazy var searchResults: Observable<[SearchResult]> = Observable
-        // TODO: implement
-        .just([.movie(Movie(identifier: 330459,
-                            title: "Rogue One: A Star Wars Story",
-                            posterPath: "/qjiskwlV1qQzRCjpV0cL9pEMF9a.jpg",
-                            backdropPath: "/tZjVVIYXACV4IIIhXeIM59ytqwS.jpg",
-                            releaseDate: String(describing: Date(timeIntervalSince1970: 1474905532)),
-                            genreIdentifiers: [28, 12, 878]))])
+    private(set) lazy var searchResults: Observable<[SearchResult]> = query.asObservable()
+        .distinctUntilChanged()
+        .debounce(0.3, scheduler: MainScheduler.instance)
+        .flatMapLatest{ [weak self] query -> Observable<[SearchResult]> in
+            guard query.characters.count >= 2, let `self` = self else {
+                return Observable.just([])
+            }
+            return self.repository.searchResults(withQuery: query, page: 1)
+        }
+        .observeOn(MainScheduler.instance)
+        .share(replay: 1)
     
-    init(detailNavigator: DetailNavigator) {
+    init(detailNavigator: DetailNavigator, repository: SearchResulsRepositoryProtocol) {
         self.detailNavigator = detailNavigator
+        self.repository = repository
     }
     
     /// Called by the view when the user selects a search result
