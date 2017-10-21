@@ -7,8 +7,8 @@ import PlaygroundSupport
 
 PlaygroundPage.current.needsIndefiniteExecution = true
 
-let assembly = CoreAssembly()
-let resultsViewController = assembly.searchAssembly.viewController()
+let assembly = CoreAssembly(navigationController: UINavigationController())
+let resultsViewController = assembly.searchAssembly.searchResultsViewController()
 
 resultsViewController.view.frame = CGRect(x: 0, y: 0, width: 475, height: 667)
 

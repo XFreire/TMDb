@@ -51,7 +51,7 @@ final class FakeDetailPresenter: DetailPresenter {
     }
 }
 
-let assembly = CoreAssembly()
+let assembly = CoreAssembly(navigationController: UINavigationController())
 let detailPresenter = FakeDetailPresenter()
 let headerPresenter = assembly.detailAssembly.detailHeaderPresenter()
 let posterStripPresenter = assembly.detailAssembly.posterStripPresenter()
