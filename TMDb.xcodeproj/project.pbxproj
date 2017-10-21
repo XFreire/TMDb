@@ -79,6 +79,7 @@
 		ACB9CB1D1F9A1E760012E1A2 /* DetailAboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB9CB1C1F9A1E760012E1A2 /* DetailAboutView.swift */; };
 		ACB9CB1F1F9A1E9A0012E1A2 /* DetailAboutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACB9CB1E1F9A1E9A0012E1A2 /* DetailAboutView.xib */; };
 		ACD2BF441F9BB7740042C54E /* Credits.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD2BF431F9BB7740042C54E /* Credits.swift */; };
+		ACD2BF461F9BB8300042C54E /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD2BF451F9BB8300042C54E /* MovieDetail.swift */; };
 		ACE02B9A1F9A0579006738C0 /* FeaturedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE02B981F9A0579006738C0 /* FeaturedViewController.swift */; };
 		ACE02B9B1F9A0579006738C0 /* FeaturedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACE02B991F9A0579006738C0 /* FeaturedViewController.xib */; };
 		ACE02B9D1F9A0BD1006738C0 /* FeaturedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE02B9C1F9A0BD1006738C0 /* FeaturedPresenter.swift */; };
@@ -209,6 +210,7 @@
 		ACB9CB1C1F9A1E760012E1A2 /* DetailAboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAboutView.swift; sourceTree = "<group>"; };
 		ACB9CB1E1F9A1E9A0012E1A2 /* DetailAboutView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailAboutView.xib; sourceTree = "<group>"; };
 		ACD2BF431F9BB7740042C54E /* Credits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credits.swift; sourceTree = "<group>"; };
+		ACD2BF451F9BB8300042C54E /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
 		ACE02B981F9A0579006738C0 /* FeaturedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedViewController.swift; sourceTree = "<group>"; };
 		ACE02B991F9A0579006738C0 /* FeaturedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeaturedViewController.xib; sourceTree = "<group>"; };
 		ACE02B9C1F9A0BD1006738C0 /* FeaturedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedPresenter.swift; sourceTree = "<group>"; };
@@ -523,6 +525,7 @@
 			children = (
 				ACA41D6C1F9A549700527B70 /* DetailSection.swift */,
 				ACD2BF431F9BB7740042C54E /* Credits.swift */,
+				ACD2BF451F9BB8300042C54E /* MovieDetail.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -879,6 +882,7 @@
 				AC17B63A1F9A423500F0F479 /* PosterStripView.swift in Sources */,
 				AC17B62C1F9A3DEC00F0F479 /* PosterStripCell.swift in Sources */,
 				AC2197CA1F9B6EB000B25C00 /* SearchNavigator.swift in Sources */,
+				ACD2BF461F9BB8300042C54E /* MovieDetail.swift in Sources */,
 				AC17B6311F9A404200F0F479 /* UICollectionView+Reusable.swift in Sources */,
 				ACE02B9A1F9A0579006738C0 /* FeaturedViewController.swift in Sources */,
 				ACA41D6F1F9A553C00527B70 /* DetailHeaderPresenter.swift in Sources */,
