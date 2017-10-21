@@ -12,6 +12,7 @@ protocol FeaturedView: class {
     var title: String? { get set }
     func setShowsHeaderTitle(_ title: String)
     func setMoviesHeaderTitle(_ title: String)
+    func setLoading(_ loading: Bool)
     
     func update(with shows: [Show])
     func update(with movies: [Movie])
@@ -52,13 +53,17 @@ private extension FeaturedPresenter {
         
         let moviesNowPlaying = repository.moviesNowPlaying(region: Locale.current.regionCode!).map{ $0.prefix(3) }
         
+        view?.setLoading(true)
         Observable.combineLatest(showsOnTheAir, moviesNowPlaying){ shows, movies in
                 return (shows, movies)
             }
+            .observeOn(MainScheduler.instance)
             .subscribe(onNext: { [weak self] shows, movies in
                 guard let `self` = self else { return }
                 self.view?.update(with: Array(shows))
                 self.view?.update(with: Array(movies))
+                }, onDisposed: { [weak self] in
+                    self?.view?.setLoading(false)
             })
             .disposed(by: disposeBag)
         

@@ -4,15 +4,17 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FeaturedViewController" customModule="TMDbCore" customModuleProvider="target">
             <connections>
+                <outlet property="loadingView" destination="OLC-NM-j5s" id="KXt-12-BFt"/>
                 <outlet property="moviesLabel" destination="qqS-F5-jMk" id="0at-N6-mDv"/>
                 <outlet property="moviesStackView" destination="JLg-Wn-MXz" id="o0o-jK-JfQ"/>
+                <outlet property="scrollView" destination="sQZ-Bt-0rQ" id="Wop-m5-5K4"/>
                 <outlet property="showsLabel" destination="C3i-Tf-tTO" id="lFg-we-S0v"/>
                 <outlet property="showsStackView" destination="B0P-y9-RgY" id="elA-xr-cSe"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -63,9 +65,14 @@
                         <constraint firstItem="qqS-F5-jMk" firstAttribute="leading" secondItem="sQZ-Bt-0rQ" secondAttribute="leading" constant="16" id="pBU-fw-sdJ"/>
                     </constraints>
                 </scrollView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="OLC-NM-j5s">
+                    <rect key="frame" x="177" y="323" width="20" height="20"/>
+                </activityIndicatorView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="OLC-NM-j5s" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="572-BE-V79"/>
+                <constraint firstItem="OLC-NM-j5s" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="HaG-IG-peN"/>
                 <constraint firstItem="sQZ-Bt-0rQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="IrT-S5-NcF"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="sQZ-Bt-0rQ" secondAttribute="bottom" id="m70-hH-5Fw"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sQZ-Bt-0rQ" secondAttribute="trailing" id="oJ8-IK-m9s"/>

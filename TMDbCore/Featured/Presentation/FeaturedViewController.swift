@@ -13,12 +13,11 @@ import RxCocoa
 class FeaturedViewController: UIViewController {
    
     // MARK: - Outlets
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var loadingView: UIActivityIndicatorView!
     @IBOutlet weak var showsLabel: UILabel!
-    
     @IBOutlet weak var showsStackView: UIStackView!
-    
     @IBOutlet weak var moviesLabel: UILabel!
-    
     @IBOutlet weak var moviesStackView: UIStackView!
     
     
@@ -51,6 +50,16 @@ class FeaturedViewController: UIViewController {
 }
 
 extension FeaturedViewController: FeaturedView {
+    func setLoading(_ loading: Bool) {
+        if loading {
+            scrollView.isHidden = true
+            loadingView.startAnimating()
+        } else {
+            scrollView.isHidden = false
+            loadingView.stopAnimating()
+        }
+    }
+    
    
     func setShowsHeaderTitle(_ title: String) {
         showsLabel.text = title
