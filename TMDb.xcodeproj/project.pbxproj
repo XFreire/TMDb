@@ -1082,6 +1082,7 @@
 		};
 		AC6C8B911F91006C005BE6C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC6C8BC21F9130A3005BE6C0 /* Keys.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -1112,6 +1113,7 @@
 		};
 		AC6C8B921F91006C005BE6C0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC6C8BC21F9130A3005BE6C0 /* Keys.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
