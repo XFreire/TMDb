@@ -9,6 +9,7 @@
 import Foundation
 
 protocol FeaturedView: class {
+    var title: String? { get set }
     func setShowsHeaderTitle(_ title: String)
     func setMoviesHeaderTitle(_ title: String)
     
@@ -21,6 +22,7 @@ final class FeaturedPresenter {
     weak var view: FeaturedView?
     
     func didLoad() {
+        view?.title = NSLocalizedString("Featured", comment: "")
         view?.setShowsHeaderTitle(NSLocalizedString("ON TV", comment: ""))
         view?.setMoviesHeaderTitle(NSLocalizedString("IN THEATERS", comment: ""))
         
