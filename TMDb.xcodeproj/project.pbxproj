@@ -78,6 +78,7 @@
 		ACB9CB1B1F9A16B00012E1A2 /* DetailHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACB9CB1A1F9A16B00012E1A2 /* DetailHeaderView.xib */; };
 		ACB9CB1D1F9A1E760012E1A2 /* DetailAboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB9CB1C1F9A1E760012E1A2 /* DetailAboutView.swift */; };
 		ACB9CB1F1F9A1E9A0012E1A2 /* DetailAboutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACB9CB1E1F9A1E9A0012E1A2 /* DetailAboutView.xib */; };
+		ACD2BF441F9BB7740042C54E /* Credits.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD2BF431F9BB7740042C54E /* Credits.swift */; };
 		ACE02B9A1F9A0579006738C0 /* FeaturedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE02B981F9A0579006738C0 /* FeaturedViewController.swift */; };
 		ACE02B9B1F9A0579006738C0 /* FeaturedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACE02B991F9A0579006738C0 /* FeaturedViewController.xib */; };
 		ACE02B9D1F9A0BD1006738C0 /* FeaturedPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE02B9C1F9A0BD1006738C0 /* FeaturedPresenter.swift */; };
@@ -207,6 +208,7 @@
 		ACB9CB1A1F9A16B00012E1A2 /* DetailHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailHeaderView.xib; sourceTree = "<group>"; };
 		ACB9CB1C1F9A1E760012E1A2 /* DetailAboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAboutView.swift; sourceTree = "<group>"; };
 		ACB9CB1E1F9A1E9A0012E1A2 /* DetailAboutView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailAboutView.xib; sourceTree = "<group>"; };
+		ACD2BF431F9BB7740042C54E /* Credits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credits.swift; sourceTree = "<group>"; };
 		ACE02B981F9A0579006738C0 /* FeaturedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedViewController.swift; sourceTree = "<group>"; };
 		ACE02B991F9A0579006738C0 /* FeaturedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeaturedViewController.xib; sourceTree = "<group>"; };
 		ACE02B9C1F9A0BD1006738C0 /* FeaturedPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedPresenter.swift; sourceTree = "<group>"; };
@@ -520,6 +522,7 @@
 			isa = PBXGroup;
 			children = (
 				ACA41D6C1F9A549700527B70 /* DetailSection.swift */,
+				ACD2BF431F9BB7740042C54E /* Credits.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -872,6 +875,7 @@
 				ACE7A03F1F92105A00A53671 /* Show.swift in Sources */,
 				AC2197C71F9B626500B25C00 /* PhoneDetailNavigator.swift in Sources */,
 				ACE7A0361F91F91400A53671 /* ImageLoadingAssembly.swift in Sources */,
+				ACD2BF441F9BB7740042C54E /* Credits.swift in Sources */,
 				AC17B63A1F9A423500F0F479 /* PosterStripView.swift in Sources */,
 				AC17B62C1F9A3DEC00F0F479 /* PosterStripCell.swift in Sources */,
 				AC2197CA1F9B6EB000B25C00 /* SearchNavigator.swift in Sources */,
