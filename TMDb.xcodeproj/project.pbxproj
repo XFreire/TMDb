@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC17151D1F9DF8D4001DC3AD /* MovieRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17151C1F9DF8D4001DC3AD /* MovieRepository.swift */; };
 		AC17B62C1F9A3DEC00F0F479 /* PosterStripCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17B62A1F9A3DEC00F0F479 /* PosterStripCell.swift */; };
 		AC17B62D1F9A3DEC00F0F479 /* PosterStripCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC17B62B1F9A3DEC00F0F479 /* PosterStripCell.xib */; };
 		AC17B62F1F9A401700F0F479 /* MediaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17B62E1F9A401700F0F479 /* MediaType.swift */; };
@@ -140,6 +141,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AC17151C1F9DF8D4001DC3AD /* MovieRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRepository.swift; sourceTree = "<group>"; };
 		AC17B62A1F9A3DEC00F0F479 /* PosterStripCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterStripCell.swift; sourceTree = "<group>"; };
 		AC17B62B1F9A3DEC00F0F479 /* PosterStripCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PosterStripCell.xib; sourceTree = "<group>"; };
 		AC17B62E1F9A401700F0F479 /* MediaType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaType.swift; sourceTree = "<group>"; };
@@ -272,6 +274,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC17151B1F9DF8C0001DC3AD /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				AC17151C1F9DF8D4001DC3AD /* MovieRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
 		AC17B6321F9A407C00F0F479 /* DI */ = {
 			isa = PBXGroup;
 			children = (
@@ -541,6 +551,7 @@
 		ACB9CB121F9A15300012E1A2 /* Details */ = {
 			isa = PBXGroup;
 			children = (
+				AC17151B1F9DF8C0001DC3AD /* Repositories */,
 				AC2197C31F9B610100B25C00 /* Navigators */,
 				ACA41D6B1F9A548C00527B70 /* Domain */,
 				AC17B6321F9A407C00F0F479 /* DI */,
@@ -847,6 +858,7 @@
 				AC65F24C1F991B2C00D2BA6D /* FeaturedAssembly.swift in Sources */,
 				AC995ABA1F922A1D0007D195 /* SearchAssembly.swift in Sources */,
 				ACAF63C81F94A5D900BD9FF1 /* SearchResultsPresenter.swift in Sources */,
+				AC17151D1F9DF8D4001DC3AD /* MovieRepository.swift in Sources */,
 				ACB9CB191F9A16A60012E1A2 /* DetailHeaderView.swift in Sources */,
 				ACE7A03D1F92105400A53671 /* Movie.swift in Sources */,
 				AC995AB81F9228340007D195 /* SearchResultCellPresenter.swift in Sources */,
