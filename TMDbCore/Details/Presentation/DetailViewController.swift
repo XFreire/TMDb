@@ -89,7 +89,7 @@ private extension DetailViewController {
     
     func aboutView(withTitle title: String, detail: String) -> UIView{
         let aboutView = DetailAboutView.instantiate()
-        aboutView.titleLabel.text = title
+        aboutView.titleLabel.text = title.uppercased()
         aboutView.detailLabel.text = detail
         
         return aboutView

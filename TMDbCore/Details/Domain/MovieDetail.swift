@@ -11,7 +11,7 @@ import Foundation
 struct MovieDetail: Decodable {
     let backdropPath: String?
     let identifier: Int64
-    let overview: String
+    let overview: String?
     let posterPath: String?
     let releaseDate: String?
     let runtime: Int

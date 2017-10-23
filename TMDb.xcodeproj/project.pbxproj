@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		AC17151D1F9DF8D4001DC3AD /* MovieRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17151C1F9DF8D4001DC3AD /* MovieRepository.swift */; };
+		AC17151F1F9DF9C4001DC3AD /* MoviePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17151E1F9DF9C4001DC3AD /* MoviePresenter.swift */; };
+		AC1715211F9DFCD3001DC3AD /* DetailHeader+MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1715201F9DFCD3001DC3AD /* DetailHeader+MovieDetail.swift */; };
+		AC1715231F9E03D6001DC3AD /* PosterStripItem+CastMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1715221F9E03D6001DC3AD /* PosterStripItem+CastMember.swift */; };
 		AC17B62C1F9A3DEC00F0F479 /* PosterStripCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17B62A1F9A3DEC00F0F479 /* PosterStripCell.swift */; };
 		AC17B62D1F9A3DEC00F0F479 /* PosterStripCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC17B62B1F9A3DEC00F0F479 /* PosterStripCell.xib */; };
 		AC17B62F1F9A401700F0F479 /* MediaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC17B62E1F9A401700F0F479 /* MediaType.swift */; };
@@ -142,6 +145,9 @@
 
 /* Begin PBXFileReference section */
 		AC17151C1F9DF8D4001DC3AD /* MovieRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRepository.swift; sourceTree = "<group>"; };
+		AC17151E1F9DF9C4001DC3AD /* MoviePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePresenter.swift; sourceTree = "<group>"; };
+		AC1715201F9DFCD3001DC3AD /* DetailHeader+MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailHeader+MovieDetail.swift"; sourceTree = "<group>"; };
+		AC1715221F9E03D6001DC3AD /* PosterStripItem+CastMember.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PosterStripItem+CastMember.swift"; sourceTree = "<group>"; };
 		AC17B62A1F9A3DEC00F0F479 /* PosterStripCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterStripCell.swift; sourceTree = "<group>"; };
 		AC17B62B1F9A3DEC00F0F479 /* PosterStripCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PosterStripCell.xib; sourceTree = "<group>"; };
 		AC17B62E1F9A401700F0F479 /* MediaType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaType.swift; sourceTree = "<group>"; };
@@ -536,6 +542,8 @@
 				ACA41D6C1F9A549700527B70 /* DetailSection.swift */,
 				ACD2BF431F9BB7740042C54E /* Credits.swift */,
 				ACD2BF451F9BB8300042C54E /* MovieDetail.swift */,
+				AC1715201F9DFCD3001DC3AD /* DetailHeader+MovieDetail.swift */,
+				AC1715221F9E03D6001DC3AD /* PosterStripItem+CastMember.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -577,6 +585,7 @@
 				AC17B6401F9A47B500F0F479 /* PosterStripLayout.swift */,
 				ACA41D6E1F9A553C00527B70 /* DetailHeaderPresenter.swift */,
 				ACA41D701F9A56F200527B70 /* DetailPresenter.swift */,
+				AC17151E1F9DF9C4001DC3AD /* MoviePresenter.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -855,6 +864,7 @@
 				ACA41D6D1F9A549700527B70 /* DetailSection.swift in Sources */,
 				AC17B6381F9A411400F0F479 /* PosterStripPresenter.swift in Sources */,
 				AC995AB01F921A760007D195 /* UITableView+Reusable.swift in Sources */,
+				AC1715211F9DFCD3001DC3AD /* DetailHeader+MovieDetail.swift in Sources */,
 				AC65F24C1F991B2C00D2BA6D /* FeaturedAssembly.swift in Sources */,
 				AC995ABA1F922A1D0007D195 /* SearchAssembly.swift in Sources */,
 				ACAF63C81F94A5D900BD9FF1 /* SearchResultsPresenter.swift in Sources */,
@@ -883,12 +893,14 @@
 				AC6C8BBE1F9109C6005BE6C0 /* WebService.swift in Sources */,
 				ACE7A0311F91F64300A53671 /* ImageSize.swift in Sources */,
 				AC995AB51F9223360007D195 /* SearchResultCell.swift in Sources */,
+				AC1715231F9E03D6001DC3AD /* PosterStripItem+CastMember.swift in Sources */,
 				AC2197CC1F9B6F6800B25C00 /* PhoneSearchNavigator.swift in Sources */,
 				AC995AA71F9218370007D195 /* SearchResult.swift in Sources */,
 				ACE7A0341F91F90100A53671 /* CoreAssembly.swift in Sources */,
 				AC65F2451F9916F900D2BA6D /* CardPresenter.swift in Sources */,
 				ACE7A03F1F92105A00A53671 /* Show.swift in Sources */,
 				AC2197C71F9B626500B25C00 /* PhoneDetailNavigator.swift in Sources */,
+				AC17151F1F9DF9C4001DC3AD /* MoviePresenter.swift in Sources */,
 				ACE7A0361F91F91400A53671 /* ImageLoadingAssembly.swift in Sources */,
 				ACD2BF441F9BB7740042C54E /* Credits.swift in Sources */,
 				AC17B63A1F9A423500F0F479 /* PosterStripView.swift in Sources */,
