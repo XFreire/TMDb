@@ -18,7 +18,6 @@ internal enum Endpoint {
     case showsOnTheAir(page: Int)
     case searchResults(query: String, page: Int)
     case movie(identifier: Int64)
-    case person(identigier: Int64)
 }
 internal extension Endpoint {
     func request(with baseURL: URL, adding parameters: [String : String]) -> URLRequest {
@@ -55,8 +54,6 @@ private extension Endpoint {
             return "search/multi"
         case .movie(let id):
             return "movie/\(id)"
-        case .person(let id):
-            return "person/\(id)"
         }
     }
     
@@ -79,9 +76,9 @@ private extension Endpoint {
                 "page" : String(page)
             ]
         case .movie:
-            return ["append_to_response" : "credits"]
-        case .person:
-            return ["append_to_response" : "tagged_images" ]
+            return [
+                "append_to_response" : "credits"
+            ]
         }
         
     }
