@@ -14,6 +14,7 @@ struct ShowDetail: Decodable {
     let overview: String?
     let posterPath: String?
     let firstAirDate: String?
+    let numberOfSeasons: Int
     let title: String
     let credits: Credits?
     
@@ -23,6 +24,7 @@ struct ShowDetail: Decodable {
         case overview
         case posterPath = "poster_path"
         case firstAirDate = "first_air_date"
+        case numberOfSeasons = "number_of_seasons"
         case title = "name"
         case credits
     }
