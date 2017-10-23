@@ -9,15 +9,11 @@
 import Foundation
 
 struct TaggedImage: Decodable {
-    enum ImageType: String, Decodable {
-        case poster, backdrop, still
-    }
-    
     let path: String
-    let imageType: ImageType
+    let aspectRatio: Double
     
     private enum CodingKeys: String, CodingKey {
         case path = "file_path"
-        case imageType = "image_type"
+        case aspectRatio = "aspect_ratio"
     }
 }

@@ -18,8 +18,9 @@ internal enum Endpoint {
     case showsOnTheAir(page: Int)
     case searchResults(query: String, page: Int)
     case movie(identifier: Int64)
-    case person(identigier: Int64)
+    case person(identifier: Int64)
 }
+
 internal extension Endpoint {
     func request(with baseURL: URL, adding parameters: [String : String]) -> URLRequest {
         let url = baseURL.appendingPathComponent(path)
