@@ -24,7 +24,7 @@ final class SearchResultsPresenter {
         .distinctUntilChanged()
         .debounce(0.3, scheduler: MainScheduler.instance)
         .flatMapLatest{ [weak self] query -> Observable<[SearchResult]> in
-            guard query.characters.count >= 2, let `self` = self else {
+            guard query.count >= 2, let `self` = self else {
                 return Observable.just([])
             }
             return self.repository.searchResults(withQuery: query, page: 1)
