@@ -2,6 +2,9 @@
 
 @testable import TMDbCore
 import RxSwift
+import PlaygroundSupport
+
+PlaygroundPage.current.needsIndefiniteExecution = true
 
 enum APIError: Error {
     case invalidKey
@@ -17,12 +20,11 @@ let error = Observable<Data>.error(APIError.invalidKey)
 let hello = Observable<String>.create { observer in // observer = future subscriber
     observer.onNext("Hello")
     observer.onCompleted()
-    
     return Disposables.create()
 }
 
 // Subscription
-single.subscribe{ event in
+hello.subscribe{ event in
     switch event {
     case .next(let value):
         print(value)
@@ -32,3 +34,43 @@ single.subscribe{ event in
         print("completed")
     }
 }
+
+// HTTP Request
+
+let session = URLSession(configuration: .default)
+let url = URL(string: "https://randomuser.me/api")!
+
+let randomUser = Observable<Data>.create { observer in
+    // 1
+    let task = session.dataTask(with: url) { data, response, error in
+        // 4
+        if let error = error {
+            observer.onError(error)
+        } else {
+            observer.onNext(data ?? Data())
+            observer.onCompleted()
+        }
+    }
+    
+    // 2
+    task.resume()
+    
+    // 3
+    return Disposables.create {
+        print("cancelled")
+        task.cancel()
+    }
+}
+
+let disposable = randomUser.subscribe(onNext: { data in
+    print(String(data: data, encoding: .utf8)!)
+})
+
+disposable.dispose()
+
+
+
+
+
+
+
