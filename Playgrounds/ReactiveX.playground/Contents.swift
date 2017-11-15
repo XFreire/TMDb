@@ -48,6 +48,7 @@ struct UserResponse: Decodable {
     }
     
     let results: [User]
+    let fistro: String
 }
 
 
@@ -83,6 +84,8 @@ let disposable = randomUser
     }
     .subscribe(onNext: { userResponse in
         print(userResponse)
+    }, onError: { error in
+        print(error)
     })
 
 
