@@ -75,10 +75,15 @@ let randomUser = Observable<Data>.create { observer in
         task.cancel()
     }
 }
+let decoder = JSONDecoder()
 
-let disposable = randomUser.subscribe(onNext: { data in
-    print(String(data: data, encoding: .utf8)!)
-})
+let disposable = randomUser
+    .map { data in
+        try decoder.decode(UserResponse.self, from: data)
+    }
+    .subscribe(onNext: { userResponse in
+        print(userResponse)
+    })
 
 
 //disposable.dispose()
