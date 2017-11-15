@@ -103,8 +103,9 @@ func image(with url: URL) -> Observable<UIImage> {
 }
 
 let disposable = randomUser()
-    .flatMap{ userResponse in
-        image(with: userResponse.results[0].picture.large)
+    .map { $0.results[0] }
+    .flatMap{ user in
+        image(with: user.picture.large)
     }
     .subscribe(onNext: { image in
         let temp = image
