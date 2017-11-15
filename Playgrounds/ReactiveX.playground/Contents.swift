@@ -62,8 +62,9 @@ let randomUser = Observable<Data>.create { observer in
         if let error = error {
             observer.onError(error)
         } else {
-            observer.onNext(data ?? Data())
-            observer.onCompleted()
+            observer.onError(APIError.invalidKey)
+//            observer.onNext(data ?? Data())
+//            observer.onCompleted()
         }
     }
     
