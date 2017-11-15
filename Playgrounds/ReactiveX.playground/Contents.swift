@@ -48,41 +48,42 @@ struct UserResponse: Decodable {
     }
     
     let results: [User]
-    let fistro: String
 }
 
 
 let session = URLSession(configuration: .default)
 let url = URL(string: "https://randomuser.me/api")!
 
-let randomUser = Observable<Data>.create { observer in
-    // 1
-    let task = session.dataTask(with: url) { data, response, error in
-        // 4
-        if let error = error {
-            observer.onError(error)
-        } else {
-            observer.onError(APIError.invalidKey)
-//            observer.onNext(data ?? Data())
-//            observer.onCompleted()
+
+
+let decoder = JSONDecoder()
+func randomUser() -> Observable<UserResponse> {
+    return Observable<Data>.create { observer in
+        // 1
+        let task = session.dataTask(with: url) { data, response, error in
+            // 4
+            if let error = error {
+                observer.onError(error)
+            } else {
+                observer.onNext(data ?? Data())
+                observer.onCompleted()
+            }
+        }
+        
+        // 2
+        task.resume()
+        
+        // 3
+        return Disposables.create {
+            task.cancel()
         }
     }
-    
-    // 2
-    task.resume()
-    
-    // 3
-    return Disposables.create {
-        print("cancelled")
-        task.cancel()
+    .map { data in
+            try decoder.decode(UserResponse.self, from: data)
     }
 }
-let decoder = JSONDecoder()
 
-let disposable = randomUser
-    .map { data in
-        try decoder.decode(UserResponse.self, from: data)
-    }
+let disposable = randomUser()
     .subscribe(onNext: { userResponse in
         print(userResponse)
     }, onError: { error in
