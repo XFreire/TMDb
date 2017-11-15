@@ -102,7 +102,9 @@ func image(with url: URL) -> Observable<UIImage> {
     }
 }
 
-let disposable = randomUser()
+let disposeBag = DisposeBag()
+
+randomUser()
     .map { $0.results[0] }
     .flatMap{ user in
         image(with: user.picture.large)
@@ -113,6 +115,7 @@ let disposable = randomUser()
     }, onError: { error in
         print(error)
     })
+    .disposed(by: disposeBag)
 
 let cell = UITableViewCell()
 let size = cell.imageView?.image?.size // optional chaining
