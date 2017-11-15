@@ -3,9 +3,13 @@
 @testable import TMDbCore
 import RxSwift
 
+enum APIError: Error {
+    case invalidKey
+}
+
 // Observable creation
 
 let empty = Observable<Int>.empty() // Completed only
 let single = Observable.just("Hello") // Next and completed
 let some = Observable.from(["🤔", "😎", "💩"]) // How many events are sent?: 4
-
+let error = Observable<Data>.error(APIError.invalidKey)
