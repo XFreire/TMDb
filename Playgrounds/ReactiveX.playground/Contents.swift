@@ -114,6 +114,9 @@ let disposable = randomUser()
         print(error)
     })
 
+let cell = UITableViewCell()
+let size = cell.imageView?.image?.size // optional chaining
+let size2 = cell.imageView.flatMap{ $0.image }.flatMap{ $0.size }
 
 //disposable.dispose()
 
