@@ -20,3 +20,15 @@ let hello = Observable<String>.create { observer in // observer = future subscri
     
     return Disposables.create()
 }
+
+// Subscription
+single.subscribe{ event in
+    switch event {
+    case .next(let value):
+        print(value)
+    case .error(let error):
+        print(error)
+    case .completed:
+        print("completed")
+    }
+}
