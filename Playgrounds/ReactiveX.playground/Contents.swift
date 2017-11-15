@@ -36,6 +36,20 @@ hello.subscribe{ event in
 }
 
 // HTTP Request
+struct UserResponse: Decodable {
+    struct User: Decodable {
+        struct Name: Decodable {
+            let title: String
+            let first: String
+            let last: String
+        }
+        
+        let name: Name
+    }
+    
+    let results: [User]
+}
+
 
 let session = URLSession(configuration: .default)
 let url = URL(string: "https://randomuser.me/api")!
@@ -66,7 +80,8 @@ let disposable = randomUser.subscribe(onNext: { data in
     print(String(data: data, encoding: .utf8)!)
 })
 
-disposable.dispose()
+
+//disposable.dispose()
 
 
 
