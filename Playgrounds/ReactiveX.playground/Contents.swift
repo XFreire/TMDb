@@ -8,6 +8,7 @@ PlaygroundPage.current.needsIndefiniteExecution = true
 
 enum APIError: Error {
     case invalidKey
+    case notAnImage
 }
 
 // Observable creation
@@ -44,7 +45,12 @@ struct UserResponse: Decodable {
             let last: String
         }
         
+        struct Picture: Decodable {
+            let large: URL
+        }
+        
         let name: Name
+        let picture: Picture
     }
     
     let results: [User]
@@ -57,7 +63,8 @@ let url = URL(string: "https://randomuser.me/api")!
 
 
 let decoder = JSONDecoder()
-func randomUser() -> Observable<UserResponse> {
+
+func data(with url: URL) -> Observable<Data> {
     return Observable<Data>.create { observer in
         // 1
         let task = session.dataTask(with: url) { data, response, error in
@@ -78,14 +85,30 @@ func randomUser() -> Observable<UserResponse> {
             task.cancel()
         }
     }
-    .map { data in
-            try decoder.decode(UserResponse.self, from: data)
+}
+
+func randomUser() -> Observable<UserResponse> {
+    return data(with: url).map { data in
+        try decoder.decode(UserResponse.self, from: data)
+    }
+}
+
+func image(with url: URL) -> Observable<UIImage> {
+    return data(with: url).map{
+        guard let image = UIImage(data: $0) else {
+            throw APIError.notAnImage
+        }
+        return image
     }
 }
 
 let disposable = randomUser()
-    .subscribe(onNext: { userResponse in
-        print(userResponse)
+    .flatMap{ userResponse in
+        image(with: userResponse.results[0].picture.large)
+    }
+    .subscribe(onNext: { image in
+        let temp = image
+        print(image)
     }, onError: { error in
         print(error)
     })
